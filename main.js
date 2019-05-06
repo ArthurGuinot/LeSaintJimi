@@ -11,6 +11,7 @@ function collapse() {
         i.style.zIndex= "0"
     }
     chap0.style.opacity = '1.0'
+    chap0.style.zIndex = '3'
     band6.style.opacity = '1'
 }
 
