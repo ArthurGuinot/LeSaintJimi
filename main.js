@@ -9,15 +9,17 @@ function collapse() {
         i.style.opacity = '0.0'
     }
     chap0.style.opacity = '1.0'
+    band6.style.opacity = '1'
 }
 
 function expand(id, id2) {
     if (id.style.clipPath == 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)') {
         collapse();
     } else {
-
+        band6.style.opacity = "0";
         id.style.transitionDuration = '0.8s'
         id.style.zIndex = '1'
+        id2.style.zIndex= '3'
         id.style.filter = 'grayscale(0) brightness(100%)'
         id.style.clipPath = 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)'
         id2.style.opacity = '1.0'
@@ -33,7 +35,8 @@ function start() {
     LeSaintJimi.style.transitionDuration = '1.5s';
     LeSaintJimi.style.opacity = '0.0';
 }
-band6.style.opacity = "0";
+
+
 window.onload = function(){
     db = document.documentElement;
     if(db.requestFullScreen){
