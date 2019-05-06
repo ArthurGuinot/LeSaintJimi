@@ -100,6 +100,7 @@ header a img {
 
 #band6 {
 	position: absolute;
+  border: 5px solid red;
 		-webkit-clip-path: polygon(0% 88.5%, 100% 88.5%, 100% 100%, 0% 100%);
 }
 
