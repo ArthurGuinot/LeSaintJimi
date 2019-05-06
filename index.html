@@ -4,100 +4,35 @@
 		<!-- ************************ Entête de la page ******************************** -->
 		<meta charset="utf-8" />
 		<title>Le saint Jimi</title>
-		<link rel="stylesheet" href="styleGeneral.css" />
+		<link rel="stylesheet" href="style.css" />
 		<link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
-		
-		<script type="text/javascript">
-			
-			function collapse() {
-				document.getElementById('return').style.display = 'none'
-				for (let i of document.getElementsByClassName('band')) {
-					i.style.zIndex = '0'
-					i.style.clipPath = null
-					i.style.filter = null
-				}				
-				for (let i of document.getElementsByClassName('chapitre')) {
-					i.style.opacity = '0.0'
-				}
-				chap0.style.opacity = '1.0'
-			}
-
-			function expand(id, id2) {
-				if (id.style.clipPath == 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)') {
-					collapse();
-				} else {
-					
-					id.style.transitionDuration = '0.8s'
-					id.style.zIndex = '1'
-					id.style.filter = 'grayscale(0) brightness(100%)'
-					id.style.clipPath = 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)'
-					id2.style.opacity = '1.0'
-					document.getElementById('chap0').style.transitionDuration = '0.5'
-					document.getElementById('chap0').style.opacity = '0.0'
-					document.getElementById('return').style.display = 'block'
-				}
-			}
-			
-			function start() {
-				IntroVideo.play();
-				hide.style.display = 'none';
-				LeSaintJimi.style.transitionDuration = '1.5s';
-				LeSaintJimi.style.opacity = '0.0';
-			}
-			band6.style.opacity = "0";
-			window.onload = function(){
-				db = document.documentElement;
-				if(db.requestFullScreen){
-					db.requestFullScreen();
-				} else if(db.webkitRequestFullscreen){
-					db.webkitRequestFullscreen();
-				} else if(db.mozRequestFullScreen){
-					db.mozRequestFullScreen();
-				} else if(db.msRequestFullscreen){
-					db.msRequestFullscreen();
-				}
-				wrap.style.width = window.screen.width+"px";
-				wrap.style.height = window.screen.height+"px";
-			}
-			
-			function skip() {
-				IntroVideo.pause();
-				Intro.style.display = 'none';
-				document.documentElement.style.overflow = 'auto';
-				HideBeforeIntro.style.opacity = '1';
-				hide2.style.opacity = '0';
-				Holy_sound.play();
-			}
-			
-		</script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
-			
-			
-		</script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script src="main.js" charset="utf-8"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	</head>
 
 	<body>
 		<!-- ***************************** Corps de page ***************************** -->
-		
-		
-		
+
+
+
 		<!-------------------- VIDEOINTRO ---------------------------------------->
 		<div id="Intro">
 			<a Id="LeSaintJimi" href=# onclick="start()">Le Saint Jimi</a>
 			<div Id="hide"><!-- hide options of video --></div>
 			<video Id="IntroVideo" width="100%" height="100%" onended="skip()" controls> <source src="img/video/VideoIntro.mp4"/> </video>
 			<div Id="skip" >
-				<a href=# onclick="skip()">> Passer l'introduction</a>
+				<a href=# onclick="skip()">← Passer l'introduction</a>
 			</div>
 		</div>
-		
+
 		<div Id="hide2"></div>
 		<video Id="Holy_sound" style="opacity: 0.0; position: fixed;" controls><source src="img/video/Holy_sound.mp4"/></video>
-		
-		
+
+
 		<div Id="HideBeforeIntro">
 		<div class="parallax-window" data-parallax="scroll" data-image-src="img/background/Grey.png"></div>
-		
+
 			<!-------------------- HEADER ---------------------------------------->
 			<header>
 				<a Id ='band1' class="band" onclick = "expand(this, chap1)"><div> <img src='img/BandeauChapitre/LSJ1.png'/></div></a>
@@ -106,16 +41,16 @@
 				<a Id ='band4' class="band" onclick = "expand(this, chap4)"><div> <img src='img/BandeauChapitre/LSJ4.png'/></div></a>
 				<a Id ='band5' class="band" onclick = "expand(this, chap5)"><div> <img src='img/BandeauChapitre/LSJ5.png'/></div></a>
 				<a Id ='band6' class="band" onclick = "expand(this, chap6)"><div> <img src='img/BandeauChapitre/LSJ6.png'/></div></a>
-				
+
 				<div onclick = "collapse()"> <img src='img/icon/fleche.png' Id="return"/></div>
 			</header>
-			
-			
-			
-			
-			
+
+
+
+
+
 			<!-------------------- INTRO ---------------------------------------->
-			
+
 			<div class="chapitre" Id="chap0">
 				<div class="TitreTavu">
 					<h1>Le Saint Jimi</h1>
@@ -135,18 +70,18 @@
 				<p>Nulla facilisi. Aenean dapibus sollicitudin justo eu varius. Sed in mattis mi, sit amet tempus nulla. Aenean et commodo libero. Nunc eget dolor vel orci feugiat iaculis et nec nisi. Nam aliquam elit nec ullamcorper porta. Sed sodales imperdiet massa eu pulvinar. Suspendisse sed placerat est. Nulla nec scelerisque neque, ut scelerisque diam. Maecenas dignissim sed velit ut ultrices. Donec elementum tellus ac efficitur aliquam. Mauris ultricies sapien quis elit vestibulum, ac ultricies ex maximus.</p>
 				</div>
 			</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
+
+
+
+
+
+
+
+
+
 			<!-------------------- CHAPITRE 1 ---------------------------------------->
-			
+
 			<div class="chapitre" Id="chap1">
 				<div class="TitreTavu">
 					<h1>CHAPITRE I</h1>
@@ -171,28 +106,28 @@
 				<p>Nulla facilisi. Aenean dapibus sollicitudin justo eu varius. Sed in mattis mi, sit amet tempus nulla. Aenean et commodo libero. Nunc eget dolor vel orci feugiat iaculis et nec nisi. Nam aliquam elit nec ullamcorper porta. Sed sodales imperdiet massa eu pulvinar. Suspendisse sed placerat est. Nulla nec scelerisque neque, ut scelerisque diam. Maecenas dignissim sed velit ut ultrices. Donec elementum tellus ac efficitur aliquam. Mauris ultricies sapien quis elit vestibulum, ac ultricies ex maximus.</p>
 				</div>
 			</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
+
+
+
+
+
+
+
+
+
 			<!-------------------- CHAPITRE 2 ---------------------------------------->
-			
+
 			<div class="chapitre" Id="chap2">
 				<div class="TitreTavu">
 					<h1>CHAPITRE II</h1>
 					<h1>Are you experienced?</h1>
 				</div>
-				
+
 				<div class="VideoIntro">
 					<iframe class='resume' src="https://www.youtube.com/embed/_PVjcIO4MT4" frameborder="0" allowfullscreen></iframe>
 				</div>
-				
+
 				<div class="corps">
 				<p> Vestibulum ac gravida est, et finibus purus. Nunc nec laoreet nibh. Vivamus a volutpat lacus. Maecenas sagittis, dui sed maximus dictum, nunc elit consequat dolor, sed tempor arcu ex vel nisi. Suspendisse potenti. Pellentesque pulvinar consequat molestie. Nulla aliquam metus lectus, nec bibendum leo aliquet et. Praesent rutrum vulputate rutrum. Donec id neque imperdiet, ullamcorper ante sed, vestibulum tellus. Pellentesque vel luctus dui, in sollicitudin nunc. Praesent volutpat consectetur volutpat. In sagittis lectus magna, eu gravida lacus ornare nec. Proin ut nisi non diam imperdiet porta ac a enim. Aliquam id urna quis neque molestie consequat.</p>
 				<p>Duis in tempor velit, pharetra rutrum augue. Maecenas mattis leo et commodo venenatis. Integer ligula nisi, hendrerit eu elit ac, ornare consectetur dolor. Nam ut mi vel odio ultrices blandit eget eget lacus. Praesent interdum eros quis magna consectetur convallis. Integer commodo semper metus at lobortis. Curabitur viverra massa sit amet orci convallis pharetra non sit amet ante. Cras et cursus eros. Nulla facilisi. Suspendisse porta hendrerit ipsum nec posuere. Fusce in ornare magna. In finibus fringilla quam, at mollis sem feugiat quis. Sed a mauris ut dui pellentesque tempor vitae quis urna. Mauris quis ex elementum, luctus nunc eu, porttitor erat. Proin vulputate ornare lacus a molestie.</p>
@@ -206,29 +141,29 @@
 				<p>Nulla facilisi. Aenean dapibus sollicitudin justo eu varius. Sed in mattis mi, sit amet tempus nulla. Aenean et commodo libero. Nunc eget dolor vel orci feugiat iaculis et nec nisi. Nam aliquam elit nec ullamcorper porta. Sed sodales imperdiet massa eu pulvinar. Suspendisse sed placerat est. Nulla nec scelerisque neque, ut scelerisque diam. Maecenas dignissim sed velit ut ultrices. Donec elementum tellus ac efficitur aliquam. Mauris ultricies sapien quis elit vestibulum, ac ultricies ex maximus.</p>
 				</div>
 			</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
+
+
+
+
+
+
+
+
+
 			<!-------------------- CHAPITRE 3 ---------------------------------------->
-			
+
 			<div class="chapitre" Id="chap3">
 				<div class="TitreTavu">
 					<h1>CHAPITRE III</h1>
 					<h1>Axis: bold as love</h1>
 				</div>
-				
+
 				<div class="VideoIntro">
 					<iframe class='resume' src="https://www.youtube.com/embed/IZBlqcbpmxY" frameborder="0" allowfullscreen></iframe>
 
 				</div>
-				
+
 				<div class="corps">
 				<p> Vestibulum ac gravida est, et finibus purus. Nunc nec laoreet nibh. Vivamus a volutpat lacus. Maecenas sagittis, dui sed maximus dictum, nunc elit consequat dolor, sed tempor arcu ex vel nisi. Suspendisse potenti. Pellentesque pulvinar consequat molestie. Nulla aliquam metus lectus, nec bibendum leo aliquet et. Praesent rutrum vulputate rutrum. Donec id neque imperdiet, ullamcorper ante sed, vestibulum tellus. Pellentesque vel luctus dui, in sollicitudin nunc. Praesent volutpat consectetur volutpat. In sagittis lectus magna, eu gravida lacus ornare nec. Proin ut nisi non diam imperdiet porta ac a enim. Aliquam id urna quis neque molestie consequat.</p>
 				<p>Duis in tempor velit, pharetra rutrum augue. Maecenas mattis leo et commodo venenatis. Integer ligula nisi, hendrerit eu elit ac, ornare consectetur dolor. Nam ut mi vel odio ultrices blandit eget eget lacus. Praesent interdum eros quis magna consectetur convallis. Integer commodo semper metus at lobortis. Curabitur viverra massa sit amet orci convallis pharetra non sit amet ante. Cras et cursus eros. Nulla facilisi. Suspendisse porta hendrerit ipsum nec posuere. Fusce in ornare magna. In finibus fringilla quam, at mollis sem feugiat quis. Sed a mauris ut dui pellentesque tempor vitae quis urna. Mauris quis ex elementum, luctus nunc eu, porttitor erat. Proin vulputate ornare lacus a molestie.</p>
@@ -242,28 +177,28 @@
 				<p>Nulla facilisi. Aenean dapibus sollicitudin justo eu varius. Sed in mattis mi, sit amet tempus nulla. Aenean et commodo libero. Nunc eget dolor vel orci feugiat iaculis et nec nisi. Nam aliquam elit nec ullamcorper porta. Sed sodales imperdiet massa eu pulvinar. Suspendisse sed placerat est. Nulla nec scelerisque neque, ut scelerisque diam. Maecenas dignissim sed velit ut ultrices. Donec elementum tellus ac efficitur aliquam. Mauris ultricies sapien quis elit vestibulum, ac ultricies ex maximus.</p>
 				</div>
 			</div>
-			
+
 			<div class="chapitre" Id="chap4">
 				<div class="TitreTavu">
 					<h1>CHAPITRE IV</h1>
 					<h1>Aucune idée lol</h1>
 				</div>
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
+
+
+
+
+
+
+
+
+
+
 				<!-------------------- CHAPITRE 4 ---------------------------------------->
-			
+
 				<div Id="VideoIntro">
 					<iframe class='resume' src="https://www.youtube.com/embed/fjwWjx7Cw8I" frameborder="0" allowfullscreen></iframe>
 				</div>
-				
+
 				<div class="corps">
 				<p> Vestibulum ac gravida est, et finibus purus. Nunc nec laoreet nibh. Vivamus a volutpat lacus. Maecenas sagittis, dui sed maximus dictum, nunc elit consequat dolor, sed tempor arcu ex vel nisi. Suspendisse potenti. Pellentesque pulvinar consequat molestie. Nulla aliquam metus lectus, nec bibendum leo aliquet et. Praesent rutrum vulputate rutrum. Donec id neque imperdiet, ullamcorper ante sed, vestibulum tellus. Pellentesque vel luctus dui, in sollicitudin nunc. Praesent volutpat consectetur volutpat. In sagittis lectus magna, eu gravida lacus ornare nec. Proin ut nisi non diam imperdiet porta ac a enim. Aliquam id urna quis neque molestie consequat.</p>
 				<p>Duis in tempor velit, pharetra rutrum augue. Maecenas mattis leo et commodo venenatis. Integer ligula nisi, hendrerit eu elit ac, ornare consectetur dolor. Nam ut mi vel odio ultrices blandit eget eget lacus. Praesent interdum eros quis magna consectetur convallis. Integer commodo semper metus at lobortis. Curabitur viverra massa sit amet orci convallis pharetra non sit amet ante. Cras et cursus eros. Nulla facilisi. Suspendisse porta hendrerit ipsum nec posuere. Fusce in ornare magna. In finibus fringilla quam, at mollis sem feugiat quis. Sed a mauris ut dui pellentesque tempor vitae quis urna. Mauris quis ex elementum, luctus nunc eu, porttitor erat. Proin vulputate ornare lacus a molestie.</p>
@@ -277,28 +212,28 @@
 				<p>Nulla facilisi. Aenean dapibus sollicitudin justo eu varius. Sed in mattis mi, sit amet tempus nulla. Aenean et commodo libero. Nunc eget dolor vel orci feugiat iaculis et nec nisi. Nam aliquam elit nec ullamcorper porta. Sed sodales imperdiet massa eu pulvinar. Suspendisse sed placerat est. Nulla nec scelerisque neque, ut scelerisque diam. Maecenas dignissim sed velit ut ultrices. Donec elementum tellus ac efficitur aliquam. Mauris ultricies sapien quis elit vestibulum, ac ultricies ex maximus.</p>
 				</div>
 			</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
+
+
+
+
+
+
+
+
+
 			<!-------------------- CHAPITRE 5---------------------------------------->
-			
+
 			<div class="chapitre" Id="chap5">
 				<div class="TitreTavu">
 					<h1>CHAPITRE V</h1>
 					<h1>Une fin inatendue</h1>
 				</div>
-				
+
 				<div Id="VideoIntro">
 					<iframe class='resume' src="https://www.youtube.com/embed/TKAwPA14Ni4" frameborder="0" allowfullscreen></iframe>
 				</div>
-				
+
 				<div class="corps">
 				<p> Vestibulum ac gravida est, et finibus purus. Nunc nec laoreet nibh. Vivamus a volutpat lacus. Maecenas sagittis, dui sed maximus dictum, nunc elit consequat dolor, sed tempor arcu ex vel nisi. Suspendisse potenti. Pellentesque pulvinar consequat molestie. Nulla aliquam metus lectus, nec bibendum leo aliquet et. Praesent rutrum vulputate rutrum. Donec id neque imperdiet, ullamcorper ante sed, vestibulum tellus. Pellentesque vel luctus dui, in sollicitudin nunc. Praesent volutpat consectetur volutpat. In sagittis lectus magna, eu gravida lacus ornare nec. Proin ut nisi non diam imperdiet porta ac a enim. Aliquam id urna quis neque molestie consequat.</p>
 				<p>Duis in tempor velit, pharetra rutrum augue. Maecenas mattis leo et commodo venenatis. Integer ligula nisi, hendrerit eu elit ac, ornare consectetur dolor. Nam ut mi vel odio ultrices blandit eget eget lacus. Praesent interdum eros quis magna consectetur convallis. Integer commodo semper metus at lobortis. Curabitur viverra massa sit amet orci convallis pharetra non sit amet ante. Cras et cursus eros. Nulla facilisi. Suspendisse porta hendrerit ipsum nec posuere. Fusce in ornare magna. In finibus fringilla quam, at mollis sem feugiat quis. Sed a mauris ut dui pellentesque tempor vitae quis urna. Mauris quis ex elementum, luctus nunc eu, porttitor erat. Proin vulputate ornare lacus a molestie.</p>
@@ -312,28 +247,28 @@
 				<p>Nulla facilisi. Aenean dapibus sollicitudin justo eu varius. Sed in mattis mi, sit amet tempus nulla. Aenean et commodo libero. Nunc eget dolor vel orci feugiat iaculis et nec nisi. Nam aliquam elit nec ullamcorper porta. Sed sodales imperdiet massa eu pulvinar. Suspendisse sed placerat est. Nulla nec scelerisque neque, ut scelerisque diam. Maecenas dignissim sed velit ut ultrices. Donec elementum tellus ac efficitur aliquam. Mauris ultricies sapien quis elit vestibulum, ac ultricies ex maximus.</p>
 				</div>
 			</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
+
+
+
+
+
+
+
+
+
 			<!-------------------- CHAPITRE 6---------------------------------------->
-			
+
 			<div class="chapitre" Id="chap6">
 				<div class="TitreTavu">
 					<h1>CHAPITRE Annexe</h1>
 					<h1>Informations supplémentaires</h1>
 				</div>
-				
+
 				<div Id="VideoIntro">
 					<iframe class='resume' src="https://www.youtube.com/embed/TKAwPA14Ni4" frameborder="0" allowfullscreen></iframe>
 				</div>
-				
+
 				<div class="corps">
 				<p> Vestibulum ac gravida est, et finibus purus. Nunc nec laoreet nibh. Vivamus a volutpat lacus. Maecenas sagittis, dui sed maximus dictum, nunc elit consequat dolor, sed tempor arcu ex vel nisi. Suspendisse potenti. Pellentesque pulvinar consequat molestie. Nulla aliquam metus lectus, nec bibendum leo aliquet et. Praesent rutrum vulputate rutrum. Donec id neque imperdiet, ullamcorper ante sed, vestibulum tellus. Pellentesque vel luctus dui, in sollicitudin nunc. Praesent volutpat consectetur volutpat. In sagittis lectus magna, eu gravida lacus ornare nec. Proin ut nisi non diam imperdiet porta ac a enim. Aliquam id urna quis neque molestie consequat.</p>
 				<p>Duis in tempor velit, pharetra rutrum augue. Maecenas mattis leo et commodo venenatis. Integer ligula nisi, hendrerit eu elit ac, ornare consectetur dolor. Nam ut mi vel odio ultrices blandit eget eget lacus. Praesent interdum eros quis magna consectetur convallis. Integer commodo semper metus at lobortis. Curabitur viverra massa sit amet orci convallis pharetra non sit amet ante. Cras et cursus eros. Nulla facilisi. Suspendisse porta hendrerit ipsum nec posuere. Fusce in ornare magna. In finibus fringilla quam, at mollis sem feugiat quis. Sed a mauris ut dui pellentesque tempor vitae quis urna. Mauris quis ex elementum, luctus nunc eu, porttitor erat. Proin vulputate ornare lacus a molestie.</p>
@@ -347,9 +282,9 @@
 				<p>Nulla facilisi. Aenean dapibus sollicitudin justo eu varius. Sed in mattis mi, sit amet tempus nulla. Aenean et commodo libero. Nunc eget dolor vel orci feugiat iaculis et nec nisi. Nam aliquam elit nec ullamcorper porta. Sed sodales imperdiet massa eu pulvinar. Suspendisse sed placerat est. Nulla nec scelerisque neque, ut scelerisque diam. Maecenas dignissim sed velit ut ultrices. Donec elementum tellus ac efficitur aliquam. Mauris ultricies sapien quis elit vestibulum, ac ultricies ex maximus.</p>
 				</div>
 			</div>
-			
-			
-			
+
+
+
 
 
 
@@ -357,9 +292,9 @@
 				<p>Tous droits réservés. Ce WebDoc a été réalisé par Clément Nguyen, Arthur Guinot, Baptiste Rayer, Jules Combelles et César Cros pour le module de M2205 à l'IUT Informatique de Paul Sabatier.</p>
 				<p>Toute copie ou appropriation de propriétés intellectuelles entrainera des poursuites, pour plus d'information, nous contacter au leSaint.Jimi@gmail.com</p>
 			</footer>
-			
-			
-			
+
+
+
 		</div>
 	</body>
 
