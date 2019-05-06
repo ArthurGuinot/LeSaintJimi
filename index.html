@@ -7,6 +7,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<script src="main.js" charset="utf-8"></script>
+
 		<!-- CA MARCHE PAAAAAA!!!! -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="/path/to/parallax.js"></script>
@@ -20,9 +21,12 @@
 			<p Id="warning">(L'utilisation du mode plein-écran est recommandé pour le bon fonctionnement du WebDoc)</p>
 			<div Id="hide"></div>
 			<video Id="IntroVideo" width="100%" height="100%" onended="skip()" controls> <source src="img/video/VideoIntro.mp4"/> </video>
+			<a href=# onclick="skip()">
 			<div Id="skip" >
-				<a href=# onclick="skip()"> > Passer l'introduction</a>
+				<p> > Passer l'introduction</p>
 			</div>
+		</a>
+
 		</div>
 
 		<div Id="hide2"></div>
@@ -39,7 +43,7 @@
 				<a Id ='band5' class="band" onclick = "expand(this, chap5)"><div> <img src='img/BandeauChapitre/LSJ5.jpg'/></div></a>
 				<a Id ='band6' class="band" onclick = "expand(this, chap6)"><div> <img src='img/BandeauChapitre/LSJ6.jpg'/></div></a>
 
-				<div onclick = "collapse()"> <img src='img/icon/fleche.png' Id="return"/></div>
+				<a href=#band1><div onclick = "collapse()"> <img src='img/icon/fleche.png' Id="return"/></div></a>
 			</header>
 
 

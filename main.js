@@ -8,6 +8,7 @@ function collapse() {
     }
     for (let i of document.getElementsByClassName('chapitre')) {
         i.style.opacity = '0.0'
+        i.style.zIndex= "0"
     }
     chap0.style.opacity = '1.0'
     band6.style.opacity = '1'

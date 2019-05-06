@@ -100,15 +100,15 @@ header a img {
 
 #band6 {
 	position: absolute;
-		-webkit-clip-path: polygon(0% 88%, 100% 88%, 100% 100%, 0% 100%);
+		-webkit-clip-path: polygon(0% 88%, 0% 100%, 100% 100%, 100% 88%);
 }
 
 #return {
-	position: absolute;
-	opacity: 1;
+	position: fixed;
+	opacity: 0.4;
 	top: 30%;
 	left : 0.5%;
-	z-index: 1;
+	z-index: 105;
 	height: 10%;
 	width: auto;
 	display: none;
@@ -212,7 +212,7 @@ h1 {
 }
 
 #hide {
-	background-color: #000;
+	background-color: #080808;
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -249,7 +249,7 @@ h1 {
 	position: fixed;
 	padding: 0.3% 0 0 1%;
 }
-#skip a {
+#skip p {
 	color: #FFF;
 	font-size: 3.5em;
 }
