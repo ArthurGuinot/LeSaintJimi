@@ -1,3 +1,4 @@
+//close all chapter
 function collapse() {
     document.getElementById('return').style.display = 'none'
     for (let i of document.getElementsByClassName('band')) {
@@ -12,6 +13,7 @@ function collapse() {
     band6.style.opacity = '1'
 }
 
+//open a chapter
 function expand(id, id2) {
     if (id.style.clipPath == 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)') {
         collapse();
@@ -29,6 +31,7 @@ function expand(id, id2) {
     }
 }
 
+//start the intro video
 function start() {
     IntroVideo.play();
     hide.style.display = 'none';
@@ -36,7 +39,7 @@ function start() {
     LeSaintJimi.style.opacity = '0.0';
 }
 
-
+//in start
 window.onload = function(){
     db = document.documentElement;
     if(db.requestFullScreen){
@@ -52,6 +55,7 @@ window.onload = function(){
     wrap.style.height = window.screen.height+"px";
 }
 
+//skip intro video
 function skip() {
     IntroVideo.pause();
     Intro.style.display = 'none';
