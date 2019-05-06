@@ -80,7 +80,7 @@ header a img {
 
 #band2 {
 	position: absolute;
-		-webkit-clip-path: polygon(20% 0%, 20% 100%, 40% 100%, 40% 0%);
+		-webkit-clip-path: polygon(20% 0%, 40% 0%, 40% 100%, 20% 100%);
 }
 
 #band3 {
@@ -90,7 +90,7 @@ header a img {
 
 #band4 {
 	position: absolute;
-		-webkit-clip-path: polygon(60% 0%, 60% 100%, 80% 100%, 80% 0%);
+		-webkit-clip-path: polygon(60% 0%, 80% 0%, 80% 100%, 60% 100%);
 }
 
 #band5 {
