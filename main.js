@@ -18,7 +18,7 @@ function expand(id, id2) {
     if (id.style.clipPath == 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)') {
         collapse();
     } else {
-        if (id2 != "band6") {
+        if (id != document.getElementById('band6')) {
           band6.style.opacity = "0";
         }
         id.style.transitionDuration = '0.8s'
@@ -66,3 +66,5 @@ function skip() {
     hide2.style.opacity = '0';
     Holy_sound.play();
 }
+
+//TODO PARALLAX SUR LE BACKGROUND
