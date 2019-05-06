@@ -18,7 +18,9 @@ function expand(id, id2) {
     if (id.style.clipPath == 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)') {
         collapse();
     } else {
-        band6.style.opacity = "0";
+        if (id2 != "band6") {
+          band6.style.opacity = "0";
+        }
         id.style.transitionDuration = '0.8s'
         id.style.zIndex = '1'
         id2.style.zIndex= '3'
