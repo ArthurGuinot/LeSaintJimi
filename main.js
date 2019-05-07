@@ -35,14 +35,6 @@ function expand(id, id2) {
     }
 }
 
-//start the intro video
-function start() {
-    IntroVideo.play();
-    hide.style.display = 'none';
-    LeSaintJimi.style.transitionDuration = '1.5s';
-    LeSaintJimi.style.opacity = '0.0';
-}
-
 //in start
 window.onload = function(){
     db = document.documentElement;
@@ -59,6 +51,15 @@ window.onload = function(){
     wrap.style.height = window.screen.height+"px";
 }
 
+//start the intro video
+function start() {
+    IntroVideo.play();
+    IntroVideo2.style.display = 'none'
+    hide.style.display = 'none';
+    LeSaintJimi.style.transitionDuration = '1.5s';
+    LeSaintJimi.style.opacity = '0.0';
+}
+
 //skip intro video
 function skip() {
     IntroVideo.pause();
@@ -67,6 +68,14 @@ function skip() {
     HideBeforeIntro.style.opacity = '1';
     hide2.style.opacity = '0';
     Holy_sound.play();
+}
+
+function diff() {
+  hide.style.display = 'none';
+  LeSaintJimi.style.transitionDuration = '1.5s';
+  LeSaintJimi.style.opacity = '0.0';
+  IntroVideo.style.display = 'none';
+  IntroVideo2.style.display = block;
 }
 
 //TODO PARALLAX SUR LE BACKGROUND

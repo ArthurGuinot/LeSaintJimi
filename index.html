@@ -18,23 +18,31 @@
 		<!-------------------- VIDEOINTRO ---------------------------------------->
 		<div id="Intro">
 			<a Id="LeSaintJimi" href=# onclick="start()">Le Saint Jimi</a>
-			<p Id="warning">(L'utilisation du mode plein-écran est recommandé pour le bon fonctionnement du WebDoc)</p>
+			<p Id="warning">(L'utilisation du mode plein-écran est recommandée pour le bon fonctionnement du WebDoc)</p>
 			<div Id="hide"></div>
 			<video Id="IntroVideo" width="100%" height="100%" onended="skip()" controls> <source src="img/video/VideoIntro.mp4"/> </video>
-			<a href=# onclick="skip()">
-			<div Id="skip" >
-				<p> > Passer l'introduction</p>
-			</div>
-		</a>
+			<video Id="IntroVideo2" style="width:100%; height:100%; display: none" onended="skip()" controls> <source src="img/video/VideoIntro2.mp4"/> </video>
+
+			<a style="color:#FAA" color="FFF" href=# onclick="diff()">
+				<div Id="diff" >
+					<p style="color: #FAA; font-size: 3.5em">Voir l'introduction différente < </p>
+				</div>
+			</a>
+
+			<a style="color:#000" href=# onclick="skip()">
+				<div Id="skip" >
+					<p style="color: #FFF; font-size: 3.5em"> > Passer l'introduction</p>
+				</div>
+			</a>
 
 		</div>
 
 		<div Id="hide2"></div>
 		<video Id="Holy_sound" style="opacity: 0.0; position: fixed;" controls><source src="img/video/Holy_sound.mp4"/></video>
 
-		<div Id="HideBeforeIntro">
-
 			<!-------------------- HEADER ---------------------------------------->
+
+			<div Id="HideBeforeIntro">
 			<header>
 				<a Id ='band1' class="band" onclick = "expand(this, chap1)"><div> <img src='img/BandeauChapitre/LSJ1.jpg'/></div></a>
 				<a Id ='band2' class="band" onclick = "expand(this, chap2)"><div> <img src='img/BandeauChapitre/LSJ2.jpg'/></div></a>
@@ -266,21 +274,42 @@
 					<h1>Le son de Jimi Hendrix</h1>
 				</div>
 
-				<div Id="VideoIntro">
-					<iframe class='resume' src="https://www.youtube.com/embed/TKAwPA14Ni4" frameborder="0" allowfullscreen></iframe>
-				</div>
-
 				<div class="corps">
-				<p> Vestibulum ac gravida est, et finibus purus. Nunc nec laoreet nibh. Vivamus a volutpat lacus. Maecenas sagittis, dui sed maximus dictum, nunc elit consequat dolor, sed tempor arcu ex vel nisi. Suspendisse potenti. Pellentesque pulvinar consequat molestie. Nulla aliquam metus lectus, nec bibendum leo aliquet et. Praesent rutrum vulputate rutrum. Donec id neque imperdiet, ullamcorper ante sed, vestibulum tellus. Pellentesque vel luctus dui, in sollicitudin nunc. Praesent volutpat consectetur volutpat. In sagittis lectus magna, eu gravida lacus ornare nec. Proin ut nisi non diam imperdiet porta ac a enim. Aliquam id urna quis neque molestie consequat.</p>
-				<p>Duis in tempor velit, pharetra rutrum augue. Maecenas mattis leo et commodo venenatis. Integer ligula nisi, hendrerit eu elit ac, ornare consectetur dolor. Nam ut mi vel odio ultrices blandit eget eget lacus. Praesent interdum eros quis magna consectetur convallis. Integer commodo semper metus at lobortis. Curabitur viverra massa sit amet orci convallis pharetra non sit amet ante. Cras et cursus eros. Nulla facilisi. Suspendisse porta hendrerit ipsum nec posuere. Fusce in ornare magna. In finibus fringilla quam, at mollis sem feugiat quis. Sed a mauris ut dui pellentesque tempor vitae quis urna. Mauris quis ex elementum, luctus nunc eu, porttitor erat. Proin vulputate ornare lacus a molestie.</p>
-				<p>Nulla in purus eget augue tempor venenatis. Nam non mollis ligula, auctor consectetur nibh. Aliquam venenatis hendrerit maximus. Sed non elit sed nunc placerat pretium eu at quam. Nullam gravida a leo vitae tincidunt. Phasellus eu hendrerit leo, ac pellentesque odio. Quisque auctor nulla mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque faucibus, arcu ac lobortis molestie, sapien nulla fermentum neque, vel cursus nisi neque et sem. Nullam mauris orci, pulvinar ac consectetur non, dignissim tempor risus. Vestibulum massa ante, commodo sagittis nisi et, accumsan suscipit felis. Duis erat felis, tempus sit amet est vitae, suscipit posuere nulla.</p>
-				<p>Vivamus facilisis, mauris eget faucibus aliquet, magna augue imperdiet lacus, vel rutrum nibh erat eu eros. Phasellus lobortis maximus euismod. Suspendisse sed ullamcorper magna. Vestibulum ac leo at metus egestas pulvinar. Maecenas venenatis ex magna, eget pretium ante maximus laoreet. Integer vulputate non augue vel eleifend. Sed tempor nisl in ante congue rhoncus. Praesent orci lectus, placerat ut volutpat sit amet, condimentum eget leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur rutrum posuere. Pellentesque nisi ipsum, commodo nec eros et, sagittis aliquet eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam vehicula, erat ac accumsan placerat, ligula quam hendrerit libero, vitae tempus ligula leo id dui. Donec vitae magna id mauris blandit pretium sed at tortor. Donec non molestie nisi, sit amet sollicitudin diam. Duis bibendum consequat nunc eget iaculis.</p>
-				<p>Nunc gravida lacus ac mi molestie laoreet. Curabitur at ex ipsum. Sed ultrices ipsum non tempus vestibulum. Quisque scelerisque semper nibh, vel commodo arcu finibus sed. Suspendisse dapibus congue neque eget elementum. Ut euismod rhoncus ipsum, et efficitur tortor sodales id. Sed viverra turpis sed ligula blandit maximus. Fusce vehicula elit in dolor eleifend, a interdum felis egestas. Suspendisse non fermentum risus, in sollicitudin sapien. Etiam porta ligula in lacus hendrerit, non dapibus magna consectetur. Curabitur fermentum lacus vel malesuada tempus. Cras vel mollis leo. Quisque eu luctus metus.</p>
-				<p>Nam ac erat turpis. Maecenas ut sem at mi aliquam fringilla. Curabitur tristique sapien sit amet rhoncus ornare. Quisque id felis vel leo rhoncus molestie non eu neque. Etiam rutrum pulvinar ante suscipit porttitor. Morbi sagittis massa eget aliquam consectetur. Donec sit amet ornare nisi, fringilla feugiat felis. Sed eu orci massa.
-				<p>Ut in porta enim. Quisque elementum finibus vestibulum. Nam nibh nisl, efficitur non euismod sed, consequat vitae nisi. Cras suscipit congue dictum. Suspendisse potenti. Fusce sollicitudin viverra velit, sit amet feugiat tellus rhoncus nec. Curabitur non erat at metus pharetra sollicitudin. Quisque vitae diam elit. Suspendisse porttitor porttitor sapien, ut mattis nunc. Nam consequat commodo purus, non iaculis neque euismod eu. Vivamus pellentesque ut nulla vitae condimentum. Proin facilisis semper sem, sit amet condimentum nibh pharetra at. Nunc vitae arcu ut sem ultricies convallis. Nulla facilisi. Aliquam ac sollicitudin ante.</p>
-				<p>Duis quis bibendum mauris. Duis feugiat sem nisl, vel fermentum massa rutrum vitae. Integer quis euismod est. Sed eget nibh scelerisque, sollicitudin neque sed, rutrum eros. Mauris ut nulla posuere, luctus tellus non, porttitor metus. Quisque sollicitudin porttitor justo, sed consequat magna vulputate non. Nulla ac elementum enim. Sed luctus congue ligula, eu sollicitudin nibh accumsan ac. Proin porttitor bibendum dapibus. Etiam quis volutpat lacus, sed luctus tellus. Nulla eu porttitor sem, eget gravida dui. Mauris nec sapien pharetra, ornare quam vitae, condimentum risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In sed vulputate turpis.</p>
-				<p>Sed euismod lectus erat, non molestie sem auctor tincidunt. Ut et ipsum venenatis, tincidunt orci sed, rhoncus arcu. Sed a arcu id est euismod consequat. Nullam feugiat pretium tellus in tempor. Mauris sed odio vel purus malesuada blandit. Nam lorem augue, feugiat et odio quis, imperdiet venenatis ante. In iaculis nec nisi sed sagittis. Donec sed sem turpis. Vestibulum quam nibh, viverra rutrum enim eget, blandit tincidunt sem. Integer id malesuada nisi.</p>
-				<p>Nulla facilisi. Aenean dapibus sollicitudin justo eu varius. Sed in mattis mi, sit amet tempus nulla. Aenean et commodo libero. Nunc eget dolor vel orci feugiat iaculis et nec nisi. Nam aliquam elit nec ullamcorper porta. Sed sodales imperdiet massa eu pulvinar. Suspendisse sed placerat est. Nulla nec scelerisque neque, ut scelerisque diam. Maecenas dignissim sed velit ut ultrices. Donec elementum tellus ac efficitur aliquam. Mauris ultricies sapien quis elit vestibulum, ac ultricies ex maximus.</p>
+					<div Id="flute">
+						<img src="img/Assets/flute.png" usemap="#flute-map">
+
+		        <map width="100%" height="auto" name="flute-map">
+		            <area onclick="zone('mic')" target="" alt="Micros" title="Micros" coords="1975,489,1617,301" shape="rect"> <!-- LIEN MICROS -->
+		            <area onclick="zone('bridge')" target="" alt="Chevalet" title="Chevalet" coords="2117,489,2002,487,2002,396,2002,282,1856,218,1729,218,1725,191,1746,178,1854,180,1975,235,2058,271,2121,286" shape="poly"> <!-- LIEN CHEVALET -->
+		            <area onclick="zone('neck')" target="" alt="Manche et Cordes" title="Manche et Cordes" coords="1610,468,429,447,389,521,12,413,1,248,164,278,334,265,440,333,1608,322" shape="poly"> <!-- LIEN MANCHE -->
+		            <area onclick="zone('elec')" target="" alt="Électronique" title="Électronique" coords="1867,172,2123,275,2185,282,2270,93,2217,53,2136,32,2072,36,1988,66,1903,104,1858,140" shape="poly"> <!-- LIEN ELECTRONIQUE -->
+		        </map>
+					</div>
+
+					<div Id="sax">
+		        <img src="img/Assets/saxophone.jpg" usemap="#sax-map">
+
+		        <map width="100%" height="auto" name="sax-map">
+		            <area target="" alt="Cable" title="Cable"
+		                coords="371,146,377,128,387,131,398,140,402,167,407,206,417,239,441,285,464,323,490,368,523,411,549,438,574,468,600,491,639,517,655,510,683,485,710,459,745,425,776,382,802,348,817,318,842,277,874,204,882,157,884,137,894,131,907,140,907,154,900,160,890,187,875,216,858,257,838,299,812,343,786,379,765,413,738,443,707,472,689,493,657,518,648,525,646,554,643,577,646,592,655,608,656,1224,643,1257,646,1358,632,1359,628,1260,630,1221,634,606,643,599,634,571,630,527,597,498,570,473,544,449,518,420,483,372,455,327,431,289,410,245,399,211"
+		                shape="poly">
+		            <area target="" alt="Cables" title="Cables" coords="907,1187,976,1237,976,1518,941,1547,904,1544,831,1541,831,1564,842,1574,885,1574,941,1581,981,1566,1006,1538,1013,1484,1014,1429,1014,1351,1016,1252,927,1170" shape="poly">
+		            <area target="" alt="Cables" title="Cables" coords="756,1568,731,1564,725,1415,700,1399,678,1405,673,1428,669,1485,642,1482,642,1425,649,1395,666,1374,703,1368,729,1374,746,1389,756,1424,752,1468,753,1498" shape="poly">
+		            <area target="" alt="Cables" title="Cables"
+		                coords="635,1480,635,1409,648,1374,654,1305,662,1202,628,1205,611,1380,586,1364,189,1370,162,1386,143,1419,135,1462,132,1608,153,1623,158,1644,171,1661,202,1661,311,1656,321,1621,308,1568,208,1569,214,1444,602,1439,611,1485,634,1480"
+		                shape="poly">
+		            <area target="" alt="Cables" title="Cables" coords="520,1452,464,1447,460,1634,452,1647,345,1647,331,1619,328,1583,339,1563,359,1566,359,1604,364,1630,435,1632,444,1448,450,1429,503,1428" shape="poly">
+		            <area target="" alt="Guitare" title="Guitare"
+		                coords="837,453,795,576,819,603,821,920,795,933,774,907,765,874,742,874,732,891,729,934,742,980,753,1035,729,1090,715,1145,718,1185,735,1209,755,1229,798,1238,845,1248,903,1245,931,1237,951,1219,963,1197,973,1142,953,1100,936,1060,936,1016,947,983,953,943,938,917,918,926,911,951,888,960,865,951,865,603,900,572,881,507,900,483,882,444,872,457,884,445,868,452,850,449"
+		                shape="poly">
+		            <area target="" alt="Haut-Parleurs" title="Haut-Parleurs" coords="25,195,1043,1204" shape="rect">
+		            <area target="" alt="Amplificateurs" title="Amplificateurs" coords="24,5,1040,196" shape="rect">
+		            <area target="" alt="Uni-vibe" title="Uni-vibe" coords="430,1481,210,1614" shape="rect">
+		            <area target="" alt="Uni-vibe pedal" title="Uni-vibe pedal" coords="559,1653,468,1453" shape="rect">
+		            <area target="" alt="Vox Wah" title="Vox Wah" coords="839,1651,753,1441" shape="rect">
+		            <area target="" alt="Fuzzface" title="Fuzzface" coords="639,1628,672,1625,703,1602,712,1566,713,1533,692,1510,676,1490,640,1479,619,1483,592,1503,576,1523,570,1555,577,1575,589,1603,613,1620" shape="poly">
+		        </map>
+					</div>
 				</div>
 			</div>
 
@@ -293,7 +322,7 @@
 				<div>
 					<p>Tous droits réservés. Ce WebDoc a été réalisé par Clément Nguyen, Arthur Guinot, Baptiste Rayer, Jules Combelles et César Cros pour le module de M2205 à l'IUT Informatique de Paul Sabatier.</p>
 					<p>Toute copie ou appropriation de propriétés intellectuelles entrainera des poursuites, pour plus d'information, nous contacter au leSaint.Jimi@gmail.com</p>
-					<p>Pour voir les sources de chaque images et extraits de vidéos, <a href="sources.html">[cliquez ici]</a></p>
+					<p>Pour voir les sources de chaque images et extraits de vidéos, <a href="sources.html" style="color: #22F">[cliquez ici]</a></p>
 				</div>
 					<img style="z-index: 1; width:5%; height:auto; margin:1% 0 1% 0" src="img/icon/logoIut.png" />
 			</footer>

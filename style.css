@@ -108,7 +108,7 @@ header a img {
 	opacity: 0.4;
 	top: 30%;
 	left : 0.5%;
-	z-index: 105;
+	z-index: 4;
 	height: 10%;
 	width: auto;
 	display: none;
@@ -238,6 +238,7 @@ h1 {
   z-index: 105;
   position: fixed;
 }
+
 #skip {
 	transition-duration: 0.2s;
 	background: rgba(0, 0, 0, 0.5);
@@ -249,10 +250,6 @@ h1 {
 	position: fixed;
 	padding: 0.3% 0 0 1%;
 }
-#skip p {
-	color: #FFF;
-	font-size: 3.5em;
-}
 
 #skip:hover {
 	transition-duration: 0.5s;
@@ -261,7 +258,56 @@ h1 {
 	border: 1px solid white;
 }
 
+
+
+#diff {
+	transition-duration: 0.2s;
+	background: rgba(0, 0, 0, 0.5);
+	top: 20%;
+	left: -26%;
+	z-index: 101;
+	width: 29%;
+	height: 5%;
+	position: fixed;
+	padding: 0.3% 0 0 2%;
+}
+
+#diff:hover {
+	transition-duration: 0.5s;
+	left: -0.1%;
+	background-color: rgba(0, 0, 0, 0.8);
+	border: 1px solid #FAA;
+}
+
 video::-webkit-media-controls-fullscreen-button
 {
         display: none !important;
+}
+
+
+
+
+#flute {
+   margin-left:-30%;
+   width: 160%;
+   height:auto;
+   border: 5px solid green;
+}
+
+#flute img {
+  width: 100%; height: auto;
+}
+
+#flute map area{
+  width: 100%; height: 100%;
+  border: 1px solid yellow;
+}
+
+#sax {
+  margin:15% 0 0 0%;
+  width:100%;
+  height:auto;
+  left: auto;
+  right: auto;
+  border: 5px solid red;
 }
