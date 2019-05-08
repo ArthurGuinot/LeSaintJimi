@@ -49,6 +49,7 @@ window.onload = function(){
     }
     wrap.style.width = window.screen.width+"px";
     wrap.style.height = window.screen.height+"px";
+    skip();
 }
 
 //start the intro video
