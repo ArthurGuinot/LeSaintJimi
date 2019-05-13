@@ -46,19 +46,47 @@
 
 			<div Id="HideBeforeIntro">
 			<header>
-				<a Id ='band1' class="band" onclick = "expand(this, chap1)"><div> <img src='img/BandeauChapitre/LSJ1.jpg'/></div></a>
-				<a Id ='band2' class="band" onclick = "expand(this, chap2)"><div> <img src='img/BandeauChapitre/LSJ2.jpg'/></div></a>
-				<a Id ='band3' class="band" onclick = "expand(this, chap3)"><div> <img src='img/BandeauChapitre/LSJ3.jpg'/></div></a>
-				<a Id ='band4' class="band" onclick = "expand(this, chap4)"><div> <img src='img/BandeauChapitre/LSJ4.jpg'/></div></a>
-				<a Id ='band5' class="band" onclick = "expand(this, chap5)"><div> <img src='img/BandeauChapitre/LSJ5.jpg'/></div></a>
-				<a Id ='band6' class="band" onclick = "expand(this, chap6)"><div> <img src='img/BandeauChapitre/LSJ6.jpg'/></div></a>
+				<a id='band1' class="band" onclick = "expand(this, chap1)"><div> <img src='img/BandeauChapitre/LSJ1.jpg'/></div></a>
+				<a id ='band2' class="band" onclick = "expand(this, chap2)"><div> <img src='img/BandeauChapitre/LSJ2.jpg'/></div></a>
+				<a id ='band3' class="band" onclick = "expand(this, chap3)"><div> <img src='img/BandeauChapitre/LSJ3.jpg'/></div></a>
+				<a id ='band4' class="band" onclick = "expand(this, chap4)"><div> <img src='img/BandeauChapitre/LSJ4.jpg'/></div></a>
+				<a id ='band5' class="band" onclick = "expand(this, chap5)"><div> <img src='img/BandeauChapitre/LSJ5.jpg'/></div></a>
+				<a id ='band6' class="band" onclick = "expand(this, chap6)"><div> <img src='img/BandeauChapitre/LSJ6.jpg'/></div></a>
 
 				<a href=#band1><div onclick = "collapse()"> <img src='img/icon/fleche.png' Id="return"/></div></a>
 			</header>
 
+			<svg class="clip-svg">
+  				<defs>
+    				<clipPath id="svgband1" clipPathUnits="objectBoundingBox">
+      					<polygon points="0 0, 0 1, 0.2 1, 0.2 0" />
+    				</clipPath>
 
+					<clipPath id="svgband2" clipPathUnits="objectBoundingBox">
+      					<polygon points="0.2 0, 0.2 1, 0.4 1, 0.4 0" />
+					</clipPath>
 
+					<clipPath id="svgband3" clipPathUnits="objectBoundingBox">
+		  				<polygon points="0.4 0, 0.4 1, 0.6 1, 0.6 0" />
+					</clipPath>
 
+					<clipPath id="svgband4" clipPathUnits="objectBoundingBox">
+		  				<polygon points="0.6 0, 0.6 1, 0.8 1, 0.8 0" />
+					</clipPath>
+
+					<clipPath id="svgband5" clipPathUnits="objectBoundingBox">
+		  				<polygon points="0.8 0, 0.8 1, 1 1, 1 0" />
+					</clipPath>
+
+					<clipPath id="svgband6" clipPathUnits="objectBoundingBox">
+		  				<polygon points="0 0.88, 0 1, 1 1, 1 0.88" />
+					</clipPath>
+
+					<clipPath id="expanded" clipPathUnits="objectBoundingBox">
+		  				<polygon points="0 0, 0 1, 1 1, 1 0" />
+					</clipPath>
+				</defs>
+			</svg>
 
 			<!-------------------- INTRO ---------------------------------------->
 
@@ -93,7 +121,7 @@
 
 			<!-------------------- CHAPITRE 1 ---------------------------------------->
 
-			<div class="chapitre" Id="chap1">
+			<div class="chapitre" Id="chap1">ou
 				<div class="TitreTavu">
 					<h1>CHAPITRE I</h1>
 					<h1>Son enfance</h1>
