@@ -19,11 +19,11 @@ body {
   font-size: 1vmin;
 	background-color: #000;
 	overflow: hidden;
-  background-image: url('img/background/Grey.jpg');
+  /* background-image: url('img/background/Grey.jpg');
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: 25% auto;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 #HideBeforeIntro {
@@ -58,6 +58,13 @@ footer {
 /***********************************************************************************************************/
 
 /***********************************************************************************************************/
+.parralax-windows {
+  position: fixed;
+  bottom: 0; right:0;
+  z-index:10;
+  width: 495px; height: 729px;
+}
+
 header a {
 	width:100%;
 	height: auto;
