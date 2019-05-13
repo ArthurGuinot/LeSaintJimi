@@ -6,6 +6,15 @@
 	  box-sizing: border-box;
 }
 
+a {
+  color: #FFAAAA;
+  text-decoration: underline;
+  font-weight: bold;
+}
+a:hover {
+  color: #FFFFFF;
+}
+
 body {
   font-size: 1vmin;
 	background-color: #000;
