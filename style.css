@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Bahnschrift';
+    font-family: 'Roboto';
     text-decoration: none;
 	  box-sizing: border-box;
 }
@@ -120,6 +120,7 @@ header a img {
 
 .TitreTavu {
 	margin: 5% 0 5% 0;
+  font-family: 'Libre Baskerville', serif;
 }
 
 h1 {
@@ -147,7 +148,7 @@ h1 {
 	border-radius: 10px;
 	font-weight: 100;
     box-shadow: 0px -30px 100px rgba(255, 255, 255, 0.05) inset;
-  text-indent: 7.5%;
+  text-indent: 7%;
 }
 
 .corps p {

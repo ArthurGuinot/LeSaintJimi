@@ -35,6 +35,11 @@ function expand(id, id2) {
     }
 }
 
+function change(id, id2) {
+  collapse();
+  expand(id, id2);
+}
+
 //in start
 window.onload = function(){
     db = document.documentElement;
