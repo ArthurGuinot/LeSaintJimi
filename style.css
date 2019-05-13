@@ -17,7 +17,7 @@ a:hover {
 
 body {
   font-size: 1vmin;
-	background-color: #000;
+	/* background-color: #000; */
 	overflow: hidden;
   /* background-image: url('img/background/Grey.jpg');
   background-position: 100% 100%;
@@ -58,11 +58,58 @@ footer {
 /***********************************************************************************************************/
 
 /***********************************************************************************************************/
-.parralax-windows {
+#background_img {
   position: fixed;
   bottom: 0; right:0;
-  z-index:10;
-  width: 495px; height: 729px;
+  width: 24%; height: auto;
+}
+
+.box {
+  display: inline;
+  font-size: 5em;
+}
+
+.content {
+  margin-left: 50%; margin-top: 50%;
+}
+
+@import bourbon
+
+.content
+  height: 5000px
+
+.wrapper
+  +display(flex)
+  +justify-content(center)
+  +align-items(center)
+  +size(100% 100vh)
+  +position(fixed, 0px null null 0px)
+
+.box
+  +flex(none)
+  +size(100px)
+  line-height: 100px
+  text-align: center
+  font-size: 25px
+  color: #fff
+  background: #FF70FF
+  will-change: transform
+
+  &:nth-of-type(2)
+    background: #E01B5D
+  &:nth-of-type(3)
+    background: #30FFFF
+  &:nth-of-type(4)
+    background: #B3FF30
+  &:nth-of-type(5)
+    background: #308AFF
+  &:nth-of-type(6)
+    background: #1BE059
+;
+
+#box {
+  font-size: 3em;
+  color: #600;
 }
 
 header a {
@@ -92,7 +139,7 @@ header a img {
 #band1 {
 	position: absolute;
 	-webkit-clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 0%);
-   	-webkit-clip-path: url("#svgband1"); 
+   	-webkit-clip-path: url("#svgband1");
    	clip-path: url("#svgband1");
 	clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 0%);
 }
@@ -100,7 +147,7 @@ header a img {
 #band2 {
 	position: absolute;
 	-webkit-clip-path: polygon(20% 0%, 20% 100%, 40% 100%, 40% 0%);
-   	-webkit-clip-path: url("#svgband2"); 
+   	-webkit-clip-path: url("#svgband2");
    	clip-path: url("#svgband2");
 	clip-path: polygon(20% 0%, 20% 100%, 40% 100%, 40% 0%);
 }
@@ -108,7 +155,7 @@ header a img {
 #band3 {
 	position: absolute;
 	-webkit-clip-path: polygon(40% 0%, 40% 100%, 60% 100%, 60% 0%);
-   	-webkit-clip-path: url("#svgband3"); 
+   	-webkit-clip-path: url("#svgband3");
    	clip-path: url("#svgband3");
 	clip-path: polygon(40% 0%, 40% 100%, 60% 100%, 60% 0%);
 }
@@ -116,7 +163,7 @@ header a img {
 #band4 {
 	position: absolute;
 	-webkit-clip-path: polygon(60% 0%, 60% 100%, 80% 100%, 80% 0%);
-   	-webkit-clip-path: url("#svgband4"); 
+   	-webkit-clip-path: url("#svgband4");
    	clip-path: url("#svgband4");
 	clip-path: polygon(60% 0%, 60% 100%, 80% 100%, 80% 0%);
 }
@@ -124,7 +171,7 @@ header a img {
 #band5 {
 	position: absolute;
 	-webkit-clip-path: polygon(80% 0%, 80% 100%, 100% 100%, 100% 0%);
-   	-webkit-clip-path: url("#svgband5"); 
+   	-webkit-clip-path: url("#svgband5");
    	clip-path: url("#svgband5");
 	clip-path: polygon(80% 0%, 80% 100%, 100% 100%, 100% 0%);
 }
@@ -132,7 +179,7 @@ header a img {
 #band6 {
 	position: absolute;
 	-webkit-clip-path: polygon(0% 88%, 0% 100%, 100% 100%, 100% 88%);
-   	-webkit-clip-path: url("#svgband6"); 
+   	-webkit-clip-path: url("#svgband6");
    	clip-path: url("#svgband6");
 	clip-path: polygon(0% 88%, 0% 100%, 100% 100%, 100% 88%);
 }

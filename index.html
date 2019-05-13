@@ -9,14 +9,13 @@
 		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
 		<script src="main.js" charset="utf-8"></script>
 
-		<!-- CA MARCHE PAAAAAA!!!! -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="parralax/parallax.js"></script>
+		<script src="parallax/parallax.js"></script>
 	</head>
 
 	<body Id="body">		<!-- ***************************** Corps de page ***************************** -->
 
-		<!-------------------- VIDEOINTRO ---------------------------------------->
+																	<!-------------------- VIDEOINTRO ---------------------------------------->
 		<div id="Intro">
 			<a Id="LeSaintJimi" href=# onclick="start()">Le Saint Jimi</a>
 			<p Id="warning">(L'utilisation du mode plein-écran est recommandée pour le bon fonctionnement du WebDoc)</p>
@@ -35,16 +34,38 @@
 					<p style="color: #FFF; font-size: 3.5em"> > Passer l'introduction</p>
 				</div>
 			</a>
-
 		</div>
 
-		<div Id="hide2"></div>
-		<video Id="Holy_sound" style="opacity: 0.0; position: fixed;" controls><source src="img/video/Holy_sound.mp4"/></video>
-		<div width="500px" height="950px" class="parallax-window" data-parallax="scroll" data-image-src="img/background/Grey.jpg"></div>
 
-			<!-------------------- HEADER ---------------------------------------->
+																		<!-------------------- BACKGROUND ---------------------------------------->
+		<!-- <div Id="hide2"></div>
+		<video Id="Holy_sound" style="opacity: 0.0; position: fixed;" controls><source src="img/video/Holy_sound.mp4"/></video> -->
+		<!-- <div class="content">
+  		<div class="wrapper">
+				<div class="box" data-scroll-speed="9"><img id="background_img" src="img/background/Grey.jpg"></div>
+				<div class="box" data-scroll-speed="4"><img id="background_img" src="img/background/Grey.jpg"></div>
+			</div>
+		</div> -->
+
+																		<!-------------------- HEADER ---------------------------------------->
 
 			<div Id="HideBeforeIntro">
+
+
+
+			<div class="content">
+	  <div class="wrapper">
+	    <div class="box" data-scroll-speed="2">S</div>
+	    <div class="box" data-scroll-speed="3">C</div>
+	    <div class="box" data-scroll-speed="6">R</div>
+	    <div class="box" data-scroll-speed="5">O</div>
+	    <div class="box" data-scroll-speed="9">L</div>
+	    <div class="box" data-scroll-speed="4">L</div>
+	  </div>
+	</div>
+ <!-- https://stackoverflow.com/questions/34270478/javascript-function-to-slow-down-scrolling -->
+
+
 			<header>
 				<a id='band1' class="band" onclick = "expand(this, chap1)"><div> <img src='img/BandeauChapitre/LSJ1.jpg'/></div></a>
 				<a id ='band2' class="band" onclick = "expand(this, chap2)"><div> <img src='img/BandeauChapitre/LSJ2.jpg'/></div></a>

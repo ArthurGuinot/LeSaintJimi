@@ -30,7 +30,7 @@ function expand(id, id2) {
         id2.style.zIndex= '3'
         id.style.filter = 'grayscale(0) brightness(100%)'
         id.style.clipPath = 'url("expanded")'
-		id.syyle.clipPath = 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);' 
+		id.syyle.clipPath = 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);'
         id2.style.opacity = '1.0'
         document.getElementById('chap0').style.transitionDuration = '0.5'
         document.getElementById('chap0').style.opacity = '0.0'
@@ -87,4 +87,32 @@ function diff() {
   IntroVideo2.style.display = block;
 }
 
-//TODO PARALLAX SUR LE BACKGROUND
+$.fn.moveIt = function(){
+  var $window = $(window);
+  var instances = [];
+
+  $(this).each(function(){
+    instances.push(new moveItItem($(this)));
+  });
+
+  window.addEventListener('scroll', function(){
+    var scrollTop = $window.scrollTop();
+    instances.forEach(function(inst){
+      inst.update(scrollTop);
+    });
+  }, {passive: true});
+}
+
+var moveItItem = function(el){
+  this.el = $(el);
+  this.speed = parseInt(this.el.attr('data-scroll-speed'));
+};
+
+moveItItem.prototype.update = function(scrollTop){
+  this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
+};
+
+// Initialization
+$(function(){
+  $('[data-scroll-speed]').moveIt();
+});
