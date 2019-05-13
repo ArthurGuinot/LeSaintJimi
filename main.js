@@ -17,8 +17,10 @@ function collapse() {
 
 //open a chapter
 function expand(id, id2) {
-    if (id.style.clipPath == 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)') {
+
+    if (id.style.clipPath == 'url("expanded")' || id.style.clipPath == 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);') {
         collapse();
+		console.log("hey");
     } else {
         if (id != document.getElementById('band6')) {
           band6.style.opacity = "0";
@@ -27,7 +29,8 @@ function expand(id, id2) {
         id.style.zIndex = '1'
         id2.style.zIndex= '3'
         id.style.filter = 'grayscale(0) brightness(100%)'
-        id.style.clipPath = 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)'
+        id.style.clipPath = 'url("expanded")'
+		id.syyle.clipPath = 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);' 
         id2.style.opacity = '1.0'
         document.getElementById('chap0').style.transitionDuration = '0.5'
         document.getElementById('chap0').style.opacity = '0.0'
