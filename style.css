@@ -17,7 +17,7 @@ a:hover {
 
 body {
   font-size: 1vmin;
-	/* background-color: #000; */
+	background-color: #000;
 	overflow: hidden;
   /* background-image: url('img/background/Grey.jpg');
   background-position: 100% 100%;
@@ -72,40 +72,6 @@ footer {
 .content {
   margin-left: 50%; margin-top: 50%;
 }
-
-@import bourbon
-
-.content
-  height: 5000px
-
-.wrapper
-  +display(flex)
-  +justify-content(center)
-  +align-items(center)
-  +size(100% 100vh)
-  +position(fixed, 0px null null 0px)
-
-.box
-  +flex(none)
-  +size(100px)
-  line-height: 100px
-  text-align: center
-  font-size: 25px
-  color: #fff
-  background: #FF70FF
-  will-change: transform
-
-  &:nth-of-type(2)
-    background: #E01B5D
-  &:nth-of-type(3)
-    background: #30FFFF
-  &:nth-of-type(4)
-    background: #B3FF30
-  &:nth-of-type(5)
-    background: #308AFF
-  &:nth-of-type(6)
-    background: #1BE059
-;
 
 #box {
   font-size: 3em;
@@ -287,6 +253,7 @@ h1 {
 
 /***********************************************************************************************************/
 #LeSaintJimi{
+text-decoration: none;
 	color: #CCC;
 	font-size: 1000%;
 	font-weight: bold;
