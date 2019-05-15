@@ -12,12 +12,20 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 		<script>
-			$(document).ready(function(){
-			  $("button").click(function(){
-			    alert($("div").scrollTop() + " px");
+			$(document).ready(function() {
+			  $(window).scroll(function() {
+			    $('#BackgroundJimi').css("bottom", (($(document).scrollTop()/40)-($(window).height()*0.15)));
 			  });
 			});
 		</script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			  $("button").click(function(){
+			    alert($("body").scrollTop() + " px");
+			  });
+			});
+		</script> -->
 	</head>
 
 	<body Id="body">		<!-- ***************************** Corps de page ***************************** -->
@@ -45,14 +53,10 @@
 
 
 																		<!-------------------- BACKGROUND ---------------------------------------->
-		<!-- <div Id="hide2"></div>
-		<video Id="Holy_sound" style="opacity: 0.0; position: fixed;" controls><source src="img/video/Holy_sound.mp4"/></video> -->
-		<!-- <div class="content">
-  		<div class="wrapper">
-				<div class="box" data-scroll-speed="9"><img id="background_img" src="img/background/Grey.jpg"></div>
-				<div class="box" data-scroll-speed="4"><img id="background_img" src="img/background/Grey.jpg"></div>
-			</div>
-		</div> -->
+
+		<video Id="Holy_sound" style="opacity: 0.0; position: fixed;" controls><source src="img/video/Holy_sound.mp4"/></video>
+		<div Id="hide2" style="transition-duration:10s;background-color:#000;z-index:1;width: 25%;height:100%;right:0;position:fixed"></div>
+		<img id="BackgroundJimi" width="20%" style="position:fixed; bottom:-15%; right:0" src="img/background/Grey.jpg" />
 
 																		<!-------------------- HEADER ---------------------------------------->
 
@@ -60,11 +64,8 @@
 
 
 
- <!-- https://stackoverflow.com/questions/34270478/javascript-function-to-slow-down-scrolling -->
-
-
 			<header>
-				<a id='band1' class="band" onclick = "expand(this, chap1)"><div> <img src='img/BandeauChapitre/LSJ1.jpg'/></div></a>
+				<a id ='band1' class="band" onclick = "expand(this, chap1)"><div> <img src='img/BandeauChapitre/LSJ1.jpg'/></div></a>
 				<a id ='band2' class="band" onclick = "expand(this, chap2)"><div> <img src='img/BandeauChapitre/LSJ2.jpg'/></div></a>
 				<a id ='band3' class="band" onclick = "expand(this, chap3)"><div> <img src='img/BandeauChapitre/LSJ3.jpg'/></div></a>
 				<a id ='band4' class="band" onclick = "expand(this, chap4)"><div> <img src='img/BandeauChapitre/LSJ4.jpg'/></div></a>
@@ -110,9 +111,8 @@
 
 			<div class="chapitre" Id="chap0">
 				<div class="TitreTavu">
-					<h1>Le Saint Jimi</h1>
+					<h1>LE SAINT JIMI</h1>
 					<h1>________</h1>
-								<button>Return the vertical position of the scrollbar</button>
 				</div>
 
 				<div class="corps">
@@ -140,7 +140,7 @@
 
 			<!-------------------- CHAPITRE 1 ---------------------------------------->
 
-			<div class="chapitre" Id="chap1">ou
+			<div class="chapitre" Id="chap1">
 				<div class="TitreTavu">
 					<h1>CHAPITRE I</h1>
 					<h1>Son enfance</h1>

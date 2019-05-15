@@ -11,30 +11,33 @@ function collapse() {
         i.style.zIndex= "0"
     }
     chap0.style.opacity = '1.0'
-    chap0.style.zIndex = '3'
+    chap0.style.zIndex = '5'
     band6.style.opacity = '1'
 }
 
 //open a chapter
-function expand(id, id2) {
+function expand(id, chap) {
 
     if (id.style.clipPath == 'url("expanded")' || id.style.clipPath == 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);') {
         collapse();
-		console.log("hey");
+
     } else {
+
         if (id != document.getElementById('band6')) {
           band6.style.opacity = "0";
         }
+
         id.style.transitionDuration = '0.8s'
         id.style.zIndex = '1'
-        id2.style.zIndex= '3'
+        chap.style.zIndex= '3'
         id.style.filter = 'grayscale(0) brightness(100%)'
         id.style.clipPath = 'url("expanded")'
-		id.syyle.clipPath = 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);'
-        id2.style.opacity = '1.0'
+		    id.syyle.clipPath = 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);'
+        chap.style.opacity = '1.0'
         document.getElementById('chap0').style.transitionDuration = '0.5'
         document.getElementById('chap0').style.opacity = '0.0'
         document.getElementById('return').style.display = 'block'
+        document.getElementById('return').style.zIndex = '10'
     }
 }
 
@@ -57,7 +60,6 @@ window.onload = function(){
     }
     wrap.style.width = window.screen.width+"px";
     wrap.style.height = window.screen.height+"px";
-    skip();
 }
 
 //start the intro video
