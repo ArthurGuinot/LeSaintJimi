@@ -64,11 +64,10 @@ window.onload = function(){
 
 //start the intro video
 function start() {
-    IntroVideo.play();
-    IntroVideo2.style.display = 'none'
-    hide.style.display = 'none';
-    LeSaintJimi.style.transitionDuration = '1.5s';
+    IntroVideoLol.style.display = 'none'
+    hide.style.display = 'none'
     LeSaintJimi.style.opacity = '0.0';
+    IntroVideo.play();
 }
 
 //skip intro video
@@ -81,12 +80,12 @@ function skip() {
     Holy_sound.play();
 }
 
+//change video
 function diff() {
-  hide.style.display = 'none';
-  LeSaintJimi.style.transitionDuration = '1.5s';
-  LeSaintJimi.style.opacity = '0.0';
-  IntroVideo.style.display = 'none';
-  IntroVideo2.style.display = block;
+    IntroVideo.style.display = 'none'
+    hide.style.display = 'none'
+    LeSaintJimi.style.opacity = '0.0';
+    IntroVideoLol.play();
 }
 
 $.fn.moveIt = function(){

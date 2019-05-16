@@ -244,6 +244,7 @@ h1 {
 /***********************************************************************************************************/
 #LeSaintJimi{
 text-decoration: none;
+  transition-duration: 1.2s;
 	color: #CCC;
 	font-size: 1000%;
 	font-weight: bold;
