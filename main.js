@@ -41,6 +41,19 @@ function expand(id, chap) {
     }
 }
 
+
+//open a discoDesc
+function descr(id) {
+
+    for (let i of document.getElementsByClassName('descDisque')) {
+        i.style.zIndex = null
+        i.style.opacity = null
+    }
+    id.style.zIndex = '5'
+    id.style.opacity = '1.0'
+}
+
+//switch chapter
 function change(id, id2) {
   collapse();
   expand(id, id2);

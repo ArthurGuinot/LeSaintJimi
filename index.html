@@ -25,7 +25,7 @@
 																	<!-------------------- VIDEOINTRO ---------------------------------------->
 		<div id="Intro">
 			<a Id="LeSaintJimi" href=# onclick="start()">Le Saint Jimi</a>
-			<p Id="warning">(L'utilisation du mode plein-écran est recommandée pour le bon fonctionnement du WebDoc)</p>
+			<p Id="warning">(L'utilisation du mode plein-écran est recommandée pour le bon fonctionnement du WebDoc (touche F11 ou Fn+F11) )</p>
 			<div Id="hide"></div>
 			<video Id="IntroVideo" width="100%" height="100%" onended="skip()" controls> <source src="img/video/VideoIntro.mp4"/> </video>
 			<video Id="IntroVideoLol" width="100%" height="100%" onended="skip()" controls> <source src="img/video/VideoIntroLol.mp4"/> </video>
@@ -121,43 +121,92 @@
 							<p style="text-align:center; font-size:2em;">Bibliographie</p>
 							<p style="color: rgba(255, 255, 255, 0.5); font-size:1em; margin-bottom:5%;">(Cliquez sur un album pour avoir des détails)</p>
 					<div id="disco">
-							<!-- <div style="width: 100%;"> -->
-							<img src="img/disco/1.jpg" class="imgDisque">
-							<img src="img/disco/2.jpg" class="imgDisque">
-							<img src="img/disco/3.jpg" class="imgDisque">
-							<img src="img/disco/4.jpg" class="imgDisque">
-							<img src="img/disco/5.jpg" class="imgDisque">
-							<img src="img/disco/6.jpg" class="imgDisque">
-							<img src="img/disco/7.jpg" class="imgDisque">
-							<img src="img/disco/8.jpg" class="imgDisque">
-							<img src="img/disco/9.jpg" class="imgDisque">
-							<img src="img/disco/10.jpg" class="imgDisque">
-							<img src="img/disco/11.jpg" class="imgDisque">
-							<img src="img/disco/12.jpg" class="imgDisque">
-							<img src="img/disco/13.jpg" class="imgDisque">
-							<img src="img/disco/14.jpg" class="imgDisque">
-							<img src="img/disco/15.jpg" class="imgDisque">
-							<img src="img/disco/16.jpg" class="imgDisque">
-							<img src="img/disco/17.jpg" class="imgDisque">
-							<img src="img/disco/18.jpg" class="imgDisque">
-							<img src="img/disco/19.jpg" class="imgDisque">
-							<img src="img/disco/20.jpg" class="imgDisque">
-							<img src="img/disco/21.jpg" class="imgDisque">
-							<img src="img/disco/22.jpg" class="imgDisque">
-							<img src="img/disco/23.jpg" class="imgDisque">
-							<img src="img/disco/24.jpg" class="imgDisque">
-							<img src="img/disco/25.jpg" class="imgDisque">
-							<img src="img/disco/26.jpg" class="imgDisque">
-							<img src="img/disco/27.jpg" class="imgDisque">
-							<img src="img/disco/28.jpg" class="imgDisque">
-							<img src="img/disco/29.jpg" class="imgDisque">
-							<img src="img/disco/30.jpg" class="imgDisque">
-						<!-- </div> -->
+							<img src="img/disco/1.jpg" class="imgDisque" onclick="descr(descDisque1)">
+							<img src="img/disco/2.jpg" class="imgDisque" onclick="descr(descDisque2)">
+							<img src="img/disco/3.jpg" class="imgDisque" onclick="descr(descDisque3)">
+							<img src="img/disco/4.jpg" class="imgDisque" onclick="descr(descDisque4)">
+							<img src="img/disco/5.jpg" class="imgDisque" onclick="descr(descDisque5)">
+							<img src="img/disco/6.jpg" class="imgDisque" onclick="descr(descDisque6)">
+							<img src="img/disco/7.jpg" class="imgDisque" onclick="descr(descDisque7)">
+							<img src="img/disco/8.jpg" class="imgDisque" onclick="descr(descDisque8)">
+							<img src="img/disco/9.jpg" class="imgDisque" onclick="descr(descDisque9)">
+							<img src="img/disco/10.jpg" class="imgDisque" onclick="descr(descDisque10)">
+							<img src="img/disco/11.jpg" class="imgDisque" onclick="descr(descDisque11)">
+							<img src="img/disco/12.jpg" class="imgDisque" onclick="descr(descDisque12)">
+							<img src="img/disco/13.jpg" class="imgDisque" onclick="descr(descDisque13)">
+							<img src="img/disco/14.jpg" class="imgDisque" onclick="descr(descDisque14)">
+							<img src="img/disco/15.jpg" class="imgDisque" onclick="descr(descDisque15)">
+							<img src="img/disco/16.jpg" class="imgDisque" onclick="descr(descDisque16)">
+							<img src="img/disco/17.jpg" class="imgDisque" onclick="descr(descDisque17)">
+							<img src="img/disco/18.jpg" class="imgDisque" onclick="descr(descDisque18)">
+							<img src="img/disco/19.jpg" class="imgDisque" onclick="descr(descDisque19)">
+							<img src="img/disco/20.jpg" class="imgDisque" onclick="descr(descDisque20)">
+							<img src="img/disco/21.jpg" class="imgDisque" onclick="descr(descDisque21)">
+							<img src="img/disco/22.jpg" class="imgDisque" onclick="descr(descDisque22)">
+							<img src="img/disco/23.jpg" class="imgDisque" onclick="descr(descDisque23)">
+							<img src="img/disco/24.jpg" class="imgDisque" onclick="descr(descDisque24)">
+							<img src="img/disco/25.jpg" class="imgDisque" onclick="descr(descDisque25)">
+							<img src="img/disco/26.jpg" class="imgDisque" onclick="descr(descDisque26)">
+							<img src="img/disco/27.jpg" class="imgDisque" onclick="descr(descDisque27)">
+							<img src="img/disco/28.jpg" class="imgDisque" onclick="descr(descDisque28)">
+							<img src="img/disco/29.jpg" class="imgDisque" onclick="descr(descDisque29)">
+							<img src="img/disco/30.jpg" class="imgDisque" onclick="descr(descDisque30)">
 					</div>
+
+					<div class="descDisque" id="descDisque1">
+						<div>
+							<h1>Titre de l'album</h1>
+						</div>
+						<div>
+						<p style="float:right">AAAA</p>
+						<ul>
+							<li>Jimi Hendrix</li>
+							<li>2e musicien</li>
+							<li>3e musicien</li>
+						</ul>
+					</div>
+					<div>
+						<p>courte description courte description courte description courte description courte description courte description courte description courte description courte description courte description courte description courte description courte description</p>
+					</div>
+					</div>
+
+				<div class="descDisque" id="descDisque2">
+					<div>
+						<h1>Titre de l'album</h1>
+					</div>
+					<div>
+					<p style="float:right">AAAA</p>
+					<ul>
+						<li>Jimi Hendrix</li>
+						<li>2e musicien</li>
+						<li>3e musicien</li>
+					</ul>
+				</div>
+				<div>
+					<p>courte description courte description courte description courte description courte description courte description courte description courte description courte description courte description courte description courte description courte description</p>
+				</div>
+				</div>
+
+				<div class="descDisque" id="descDisque3">
+					<div>
+						<h1>Titre de l'album</h1>
+					</div>
+					<div>
+					<p style="float:right">AAAA</p>
+					<ul>
+						<li>Jimi Hendrix</li>
+						<li>2e musicien</li>
+						<li>3e musicien</li>
+					</ul>
+				</div>
+				<div>
+					<p>courte description courte description courte description courte description courte description courte description courte description courte description courte description courte description courte description courte description courte description</p>
+				</div>
 				</div>
 
 
 
+				</div>
 			</div>
 
 
