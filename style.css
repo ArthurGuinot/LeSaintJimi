@@ -18,12 +18,6 @@ a:hover {
 body {
   font-size: 1vmin;
 	background-color: #000;
-	overflow: hidden;
-  /* background-image: url('img/background/Grey.jpg');
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  background-size: 25% auto;
-  background-attachment: fixed; */
 }
 
 #HideBeforeIntro {
@@ -43,6 +37,12 @@ footer {
 	position: absolute;
 	width:100%;
 	font-size: 2em;
+}
+
+#disco {
+  width: 100%; height: 10%;
+  overflow-x: scroll;
+  background-color: red;
 }
 
 /***********************************************************************************************************/
