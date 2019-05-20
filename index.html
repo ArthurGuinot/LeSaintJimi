@@ -8,7 +8,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
 		<script src="main.js" charset="utf-8"></script>
-
+		<script src="imageMapResizer.js" charset="utf-8"></script>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 		<script>
@@ -435,40 +435,49 @@
 				</div>
 
 				<div class="corps">
-					<!-- <div Id="flute">
-						<img src="img/Assets/flute.png" usemap="#flute-map">
+					<div style="width: 75%">
+						<script type="text/javascript">
+							imageMapResize();
+						</script>
+						<script type="text/javascript" src="mapper.js"></script>
+						<script type="text/javascript" src="wz_jsgraphics.js"></script>
+						<img class="mapper" src="img/Assets/flute.png" usemap="#flute-map">
 
 		        <map width="100%" height="auto" name="flute-map">
-		            <area onclick="zone('mic')" target="" alt="Micros" title="Micros" coords="1975,489,1617,301" shape="rect">
-		            <area onclick="zone('bridge')" target="" alt="Chevalet" title="Chevalet" coords="2117,489,2002,487,2002,396,2002,282,1856,218,1729,218,1725,191,1746,178,1854,180,1975,235,2058,271,2121,286" shape="poly">
-		            <area onclick="zone('neck')" target="" alt="Manche et Cordes" title="Manche et Cordes" coords="1610,468,429,447,389,521,12,413,1,248,164,278,334,265,440,333,1608,322" shape="poly">
-		            <area onclick="zone('elec')" target="" alt="Électronique" title="Électronique" coords="1867,172,2123,275,2185,282,2270,93,2217,53,2136,32,2072,36,1988,66,1903,104,1858,140" shape="poly">
+		            <area class="noborder icolorffffff" onclick="zone('mic')" target="" alt="Micros" title="Micros" coords="1975,489,1617,301" shape="rect">
+		            <area class="noborder icolorffffff" onclick="zone('bridge')" target="" alt="Chevalet" title="Chevalet" coords="2117,489,2002,487,2002,396,2002,282,1856,218,1729,218,1725,191,1746,178,1854,180,1975,235,2058,271,2121,286" shape="poly">
+		            <area class="noborder icolorffffff" onclick="zone('neck')" target="" alt="Manche et Cordes" title="Manche et Cordes" coords="1610,468,429,447,389,521,12,413,1,248,164,278,334,265,440,333,1608,322" shape="poly">
+		            <area class="noborder icolorffffff" onclick="zone('elec')" target="" alt="Électronique" title="Électronique" coords="1867,172,2123,275,2185,282,2270,93,2217,53,2136,32,2072,36,1988,66,1903,104,1858,140" shape="poly">
 		        </map>
-					</div> -->
+					</div>
 
-					<div Id="sax">
-		        <img src="img/Assets/saxophone.jpg" usemap="#sax-map">
+					<div style="width: 75%;">
+						<script type="text/javascript">
+							imageMapResize();
+						</script>
+						<script type="text/javascript" src="mapper.js"></script>
+						<script type="text/javascript" src="wz_jsgraphics.js"></script>
+		        		<img class="mapper" style="width: 100%" src="img/Assets/saxophone.jpg" usemap="#sax-map">
 
-		        <map width="100%" height="auto" name="sax-map">
-		            <area target="" alt="Cable" title="Cable"
-		                coords="371,146,377,128,387,131,398,140,402,167,407,206,417,239,441,285,464,323,490,368,523,411,549,438,574,468,600,491,639,517,655,510,683,485,710,459,745,425,776,382,802,348,817,318,842,277,874,204,882,157,884,137,894,131,907,140,907,154,900,160,890,187,875,216,858,257,838,299,812,343,786,379,765,413,738,443,707,472,689,493,657,518,648,525,646,554,643,577,646,592,655,608,656,1224,643,1257,646,1358,632,1359,628,1260,630,1221,634,606,643,599,634,571,630,527,597,498,570,473,544,449,518,420,483,372,455,327,431,289,410,245,399,211"
-		                shape="poly">
-		            <area target="" alt="Cables" title="Cables" coords="907,1187,976,1237,976,1518,941,1547,904,1544,831,1541,831,1564,842,1574,885,1574,941,1581,981,1566,1006,1538,1013,1484,1014,1429,1014,1351,1016,1252,927,1170" shape="poly">
-		            <area target="" alt="Cables" title="Cables" coords="756,1568,731,1564,725,1415,700,1399,678,1405,673,1428,669,1485,642,1482,642,1425,649,1395,666,1374,703,1368,729,1374,746,1389,756,1424,752,1468,753,1498" shape="poly">
-		            <area target="" alt="Cables" title="Cables"
-		                coords="635,1480,635,1409,648,1374,654,1305,662,1202,628,1205,611,1380,586,1364,189,1370,162,1386,143,1419,135,1462,132,1608,153,1623,158,1644,171,1661,202,1661,311,1656,321,1621,308,1568,208,1569,214,1444,602,1439,611,1485,634,1480"
-		                shape="poly">
-		            <area target="" alt="Cables" title="Cables" coords="520,1452,464,1447,460,1634,452,1647,345,1647,331,1619,328,1583,339,1563,359,1566,359,1604,364,1630,435,1632,444,1448,450,1429,503,1428" shape="poly">
-		            <area target="" alt="Guitare" title="Guitare"
-		                coords="837,453,795,576,819,603,821,920,795,933,774,907,765,874,742,874,732,891,729,934,742,980,753,1035,729,1090,715,1145,718,1185,735,1209,755,1229,798,1238,845,1248,903,1245,931,1237,951,1219,963,1197,973,1142,953,1100,936,1060,936,1016,947,983,953,943,938,917,918,926,911,951,888,960,865,951,865,603,900,572,881,507,900,483,882,444,872,457,884,445,868,452,850,449"
-		                shape="poly">
-		            <area target="" alt="Haut-Parleurs" title="Haut-Parleurs" coords="25,195,1043,1204" shape="rect">
-		            <area target="" alt="Amplificateurs" title="Amplificateurs" coords="24,5,1040,196" shape="rect">
-		            <area target="" alt="Uni-vibe" title="Uni-vibe" coords="430,1481,210,1614" shape="rect">
-		            <area target="" alt="Uni-vibe pedal" title="Uni-vibe pedal" coords="559,1653,468,1453" shape="rect">
-		            <area target="" alt="Vox Wah" title="Vox Wah" coords="839,1651,753,1441" shape="rect">
-		            <area target="" alt="Fuzzface" title="Fuzzface" coords="639,1628,672,1625,703,1602,712,1566,713,1533,692,1510,676,1490,640,1479,619,1483,592,1503,576,1523,570,1555,577,1575,589,1603,613,1620" shape="poly">
-		        </map>
+		        		<map id="sax" name="sax-map">
+		            		<area class="noborder icolorffffff" target="" alt="Cable" title="Cable" coords="371,146,377,128,387,131,398,140,402,167,407,206,417,239,441,285,464,323,490,368,523,411,549,438,574,468,600,491,639,517,655,510,683,485,710,459,745,425,776,382,802,348,817,318,842,277,874,204,882,157,884,137,894,131,907,140,907,154,900,160,890,187,875,216,858,257,838,299,812,343,786,379,765,413,738,443,707,472,689,493,657,518,648,525,646,554,643,577,646,592,655,608,656,1224,643,1257,646,1358,632,1359,628,1260,630,1221,634,606,643,599,634,571,630,527,597,498,570,473,544,449,518,420,483,372,455,327,431,289,410,245,399,211"
+		                		shape="poly">
+		            		<area class="noborder icolorffffff" target="" alt="Cables" title="Cables" coords="907,1187,976,1237,976,1518,941,1547,904,1544,831,1541,831,1564,842,1574,885,1574,941,1581,981,1566,1006,1538,1013,1484,1014,1429,1014,1351,1016,1252,927,1170" shape="poly">
+		            		<area class="noborder icolorffffff" target="" alt="Cables" title="Cables" coords="756,1568,731,1564,725,1415,700,1399,678,1405,673,1428,669,1485,642,1482,642,1425,649,1395,666,1374,703,1368,729,1374,746,1389,756,1424,752,1468,753,1498" shape="poly">
+		            		<area class="noborder icolorffffff" target="" alt="Cables" title="Cables"
+		                		coords="635,1480,635,1409,648,1374,654,1305,662,1202,628,1205,611,1380,586,1364,189,1370,162,1386,143,1419,135,1462,132,1608,153,1623,158,1644,171,1661,202,1661,311,1656,321,1621,308,1568,208,1569,214,1444,602,1439,611,1485,634,1480"
+		                		shape="poly">
+		            		<area class="noborder icolorffffff" target="" alt="Cables" title="Cables" coords="520,1452,464,1447,460,1634,452,1647,345,1647,331,1619,328,1583,339,1563,359,1566,359,1604,364,1630,435,1632,444,1448,450,1429,503,1428" shape="poly">
+		            		<area class="noborder icolorffffff" target="" alt="Guitare" title="Guitare"
+		                		coords="837,453,795,576,819,603,821,920,795,933,774,907,765,874,742,874,732,891,729,934,742,980,753,1035,729,1090,715,1145,718,1185,735,1209,755,1229,798,1238,845,1248,903,1245,931,1237,951,1219,963,1197,973,1142,953,1100,936,1060,936,1016,947,983,953,943,938,917,918,926,911,951,888,960,865,951,865,603,900,572,881,507,900,483,882,444,872,457,884,445,868,452,850,449"
+		                		shape="poly">
+		            		<area class="noborder icolorffffff" target="" alt="Haut-Parleurs" title="Haut-Parleurs" coords="25,195,1043,1204" shape="rect">
+		            		<area class="noborder icolorffffff" target="" alt="Amplificateurs" title="Amplificateurs" coords="24,5,1040,196" shape="rect">
+		            		<area class="noborder icolorffffff" target="" alt="Uni-vibe" title="Uni-vibe" coords="430,1481,210,1614" shape="rect">
+		            		<area class="noborder icolorffffff" target="" alt="Uni-vibe pedal" title="Uni-vibe pedal" coords="559,1653,468,1453" shape="rect">
+		            		<area class="noborder icolorffffff" target="" alt="Vox Wah" title="Vox Wah" coords="839,1651,753,1441" shape="rect">
+		            		<area class="noborder icolorffffff" target="" alt="Fuzzface" title="Fuzzface" coords="639,1628,672,1625,703,1602,712,1566,713,1533,692,1510,676,1490,640,1479,619,1483,592,1503,576,1523,570,1555,577,1575,589,1603,613,1620" shape="poly">
+		        		</map>
 					</div>
 				</div>
 			</div>

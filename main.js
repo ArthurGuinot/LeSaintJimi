@@ -32,7 +32,7 @@ function expand(id, chap) {
         chap.style.zIndex= '5'
         id.style.filter = 'grayscale(0) brightness(100%)'
         id.style.clipPath = 'url("expanded")'
-		    id.style.clipPath = 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);'
+		id.style.clipPath = 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);'
         chap.style.opacity = '1.0'
         document.getElementById('chap0').style.transitionDuration = '0.5'
         document.getElementById('chap0').style.opacity = '0.0'
