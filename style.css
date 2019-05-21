@@ -97,6 +97,13 @@ footer {
   width: 24%; height: auto;
 }
 
+#fullScreen {
+  filter: brightness(1000%);
+}
+#fullScreen:hover {
+    box-shadow: 0 0 50px 0 #FFF;
+}
+
 .box {
   display: inline;
   font-size: 5em;
@@ -200,7 +207,7 @@ header a img {
 
 .TitreTavu {
 	margin: 5% 0 5% 0;
-  /* font-family: 'Libre Baskerville', serif; */
+  font-family: 'Libre Baskerville', serif;
 }
 
 h1 {
@@ -212,8 +219,7 @@ h1 {
 }
 
 .resume {
-    width: 50%;
-    height: 584px;
+    width: 70%;  height: 584px;
     margin-left: auto;
     margin-right: auto;
     display: block;
