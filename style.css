@@ -4,6 +4,7 @@
     font-family: 'Roboto';
     text-decoration: none;
 	  box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 a {
