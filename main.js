@@ -86,11 +86,13 @@ function start() {
 //skip intro video
 function skip() {
     IntroVideo.pause();
+    IntroVideoLol.pause();
     Intro.style.display = 'none';
     document.documentElement.style.overflow = 'auto';
     HideBeforeIntro.style.opacity = '1';
     hide2.style.opacity = '0';
     Holy_sound.play();
+    document.style.overflow = 'auto';
 }
 
 //change video

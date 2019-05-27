@@ -22,7 +22,7 @@
 
 	<body Id="body">		<!-- ***************************** Corps de page ***************************** -->
 
-																	<!-------------------- VIDEOINTRO ---------------------------------------->
+																	<!-- VIDEOINTRO ---------------------------------------->
 		<div id="Intro">
 			<a Id="LeSaintJimi" href=# onclick="start()">Le Saint Jimi</a>
 			<p Id="warning">(L'utilisation du mode plein-écran est recommandée pour le bon fonctionnement du WebDoc (touche F11 ou Fn+F11) )</p>
@@ -30,9 +30,9 @@
 			<video Id="IntroVideo" width="100%" height="100%" onended="skip()" controls> <source src="img/video/VideoIntro.mp4"/> </video>
 			<video Id="IntroVideoLol" width="100%" height="100%" onended="skip()" controls> <source src="img/video/VideoIntroLol.mp4"/> </video>
 
-			<a style="color:#FAA" color="FFF" href=# onclick="diff()">
+			<a style="color:rgba(255, 160, 160, 0.5)" color="FFF" href=# onclick="diff()">
 				<div Id="diff" >
-					<p style="color: #FAA; font-size: 3.5em">Voir l'introduction différente < </p>
+					<p style="color:rgba(255, 160, 160, 0.5); font-size: 3.5em">Voir l'introduction différente < </p>
 				</div>
 			</a>
 
@@ -44,11 +44,11 @@
 		</div>
 
 
-																		<!-------------------- BACKGROUND ---------------------------------------->
+																		<!--  BACKGROUND ---------------------------------------->
 
 		<video Id="Holy_sound" style="opacity: 0.0; position: fixed;" controls><source src="img/video/Holy_sound.mp4"/></video>
 
-																		<!-------------------- HEADER ---------------------------------------->
+																		<!--  HEADER ---------------------------------------->
 
 			<div Id="HideBeforeIntro">
 			<img id="BackgroundJimi" width="20%" style="position:fixed; bottom:-15%; right:0" src="img/background/Grey.jpg" />
@@ -99,7 +99,10 @@
 				</defs>
 			</svg>
 
-			<!-------------------- INTRO ---------------------------------------->
+			<div style="border: 3px solid red; width: 100%; height:10%">
+			</div>
+
+			<!-- INTRO ---------------------------------------->
 
 			<div class="chapitre" Id="chap0" style="z-index: 5;">
 				<div class="TitreTavu">
@@ -253,7 +256,7 @@
 
 
 
-			<!-------------------- CHAPITRE 1 ---------------------------------------->
+			<!-- CHAPITRE 1 ---------------------------------------->
 
 			<div class="chapitre" Id="chap1">
 				<div class="TitreTavu">
@@ -262,36 +265,29 @@
 				</div>
 
 				<div Id="VideoIntro">
-					<iframe class='resume' src="https://www.youtube.com/embed/MwIymq0iTsw" frameborder="0" allowfullscreen></iframe>
+					<iframe class='resume' src="https://drive.google.com/file/d/1dlREatsq_VSD1u_IfiBpZO8rfrM4tFrL/preview" width="640" height="480" frameborder="0"></iframe>
 
 				</div>
 
 				<div class="corps">
-					<P>	Jimi Hendrix est né le 27 novembre 1942 à Seattle. Il connaît une enfance difficile, marquée par les problèmes d’alcoolisme de ses parents. Il grandit dans un quartier où cohabitent plusieurs communautés, lui permettant de découvrir différentes cultures.</p>
+					<p>Jimi Hendrix est né le 27 novembre 1942 à l’hôpital de « King County » à Seattle, aux Etats-Unis. Jimi est le fils de Dames Allen « Al » Hendrix et Lucille Hendrix.</p>
 					<img src="img/chap1/pic1.jpg" style="float: right; margin: 1% 0 1% 2%" />
-					<P>En 1946, son père, Al Hendrix, renomme Jimi Hendrix en James Marshall Hendrix, en souvenir de son frère qui est décédé dans les années 20.</p>
-					<P>Jimi eu un frère de cette union, Léon, né en 1948. Cependant le mariage de ses parents ne marchait pas et ils divorcèrent en décembre 1951. Le père avait des soucis pour trouver du travail dans un marché rendu difficile par la démobilisation, faute de moyens décents, il a donc envoyé ses deux enfants vivre chez leur tante à Vancouver pendant deux ans.</p>
-					<P>En 1955, ils retrouvèrent leur père car sa situation financière fut meilleur. A 13 ans, Jimi s'acheta sa première guitare électrique . Jimi était gaucher, il dut inverser les cordes ce qu'il fit d'ailleurs pendant toute sa vie même quand il disposait de modèles pour gaucher. Il passe tout son temps libre avec sa guitare puis se met à jouer dans un groupe du lycée " The Rocking Kings ».</p>
-					<img src="img/chap1/pic2.jpg" style="float: left; margin: 1% 2% 1% 0" />
-					<P>En 1960, Jimi abandonne ses études à l’age de 17 ans, puis s’engage dans l’armée pour devenir membre des Screaming Eagles, la division parachutiste de la 101ème troupe aéroportée. Il voulait changer de vie, il n’amenait même pas sa guitare avec lui. Hendrix était basé à Fort Campbell dans le Kentucky. C'était la première fois qu'il était dans les Etats du Sud où les radios passaient beaucoup de blues, ce qui stimule l’esprit de Jimi.</p>
-					<P>Fin 1961, il rencontre un autre jeune militaire, Billy Cox, musicien bassiste, avec lequel il forme un groupe : "The King Casuals" qui jouait aussi bien dans les salles de l'armée que dans les clubs extérieurs.</p>
+					<p>Jimi Hendrix ne rencontre que son père en 1944 car celui-ci est enrôlé dans l’armée dès avril 1941. Sa mère est incapable d’assumer l’éducation de son fils à cause de son problème d’alcoolisme, elle ne s’en occupe pas. Jimi se déplace de droite à gauche, chez sa mère, chez sa grand-mère et surtout chez Dolores Hall, une des sœurs de Lucille. Il vit quelque temps en Californie jusqu’a que la guerre soit terminée en 1945 et que son père le ramène à Seattle.</p>
+					<p>En 1946, son père, Al Hendrix, renomme Jimi Hendrix en James Marshall Hendrix, en souvenir de son frère qui est décédé dans les années 20.</p>
 
-					<img src="img/chap1/pic3.jpg" style="float: right; margin: 1% 0 1% 2%" />
+					<img src="img/chap1/pic2.png" style="float: left; margin: 1% 2% 1% 0" />
+					<p>James, due aux conditions de pauvreté et la négligence dans lesquelles a grandit, est profondément affectés. Il rencontre aussi des troubles familiaux avec le divorce de ses parents à l’âge de neuf ans ainsi que le décès de sa mère en février 1958. De plus, Jimi se fait battre par son père, Al Hendrix car il souffre lui aussi de problèmes d’alcools. Jimi a vécu à Seattle, ce qui peut expliquer le fait qu’il n’avait pas du mal à transgresser les barrières culturelles.</p>
 
-					<P>En 1966 après son dernier concert en temps qu'accompagnateur du saxophoniste King Curtis, Hendrix monte son propre groupe et décide de chanter pour la premiere fois. Le groupe s'appelait Jimi James & the Blue Flames. On commençait à beaucoup parler de lui. Chaque soir, le public était sous le choc.</p>
 
-					<img src="img/chap1/pic4.jpg" style="float: left; margin: 1% 2% 1% 0" />
-					<P>Un jour, sous la recommandation d'un ami, Chas Chandler, ancien bassiste des Animals, est venu écouter. Chandler fut époustouflé : dès la fin du spectacle, il a offert un contrat à Hendrix et l'invita à Londres. Quelques heures suffirent à celui-ci pour prendre la plus importante décision de sa vie. La percée semblait bien être au bout de ces 5 années de travail. </p>
-					<P>Le 24 septembre 1966 Jimi Hendrix arriva à Londres avec à la main une seule valise et sa guitare. Après deux semaines de présentation à Londres, Hendrix devint une valeur montante.</p>
+					<p>A 10 ans, Jimi est fan d’Elvis, il va même le voir en concert au stade de Seattle. Al inculque à Jimi et son frère, une éducation rigide, ce qui leurs permet d’avoir des résultats satisfaisants à l’école.</p>
+					<p>"A l'école, j'écrivais beaucoup de poésie et, à l'époque, j'étais vraiment heureux. Mes poèmes portaient essentiellement sur les fleurs, la nature, et des gens portant des robes. Je voulais être acteur ou peintre. »</p>
 
-					<img src="img/chap1/pic5.jpg" style="float: right; margin: 1% 0 1% 2%" />
-					Hendrix forma un trio avec Mitch Mitchell à la batterie et Noel Redding à la basse: "The Jimi Hendrix Experience"était né. La semaine suivant sa création, le groupe joua en France pour quatre concerts, en premiere partie de Johnny Hallyday qui avait invité Hendrix à l’Olympia.</p>
-					<P>De nombreux chansons occupa les premières places des charts anglais.</p>
+					<p>Jimi, passionné de football, joue deux ans au sein des « Fighting Irish ».</p>
+					
+					<p>Al Hendrix s’aperçoit que son fils veut jouer de la guitare en retrouvant de la paille aux pieds de son lit : il utilisait un balai comme guitare. Son premier instrument de musique est un harmonica offert par son père pour ses quatre ans. Il reçoit sa première vraie guitare à quinze ans acheté cinq dollars qu’un ami de son père lui a vendu. Il apprend la guitare en autodidacte en y consacrant tout son temps libre : il trouve sa voix, Jimi veut devenir musicien.</p>
+					<p>En 1958, à 17 ans, il tourne avec son premier "vrai" groupe « The Rocking Kings ». Le groupe finit même à la deuxième place du concours de "Meilleur groupe de l'Etat" ! Très rapidement, Jimmy s'aperçoit que les études ne l'intéressent plus et les abandonne définitivement en 1960. </p>
 
-					<img src="img/chap1/pic6.jpg" style="float: left; margin: 1% 2% 1% 0" />
-					<P>Malgré les tensions à l'intérieur du groupe, Hendrix, Mitchell et Redding resteront ensemble jusqu'à la fin de leur tournée de 1969 qui les mènera en Grande-Bretagne, en Europe et aux Etats-Unis. Hendrix était à présent le musicien le mieux payé du circuit rock: jamais moins de 50 000 $ par concert et souvent plus de 100 000$ dans les grandes salles. Avant la séparation définitive du groupe, Hendrix enregistre "The Electric Ladyland" qui est son seul album à avoir été numéro 1 aux Etats-Unis. </p>
-					<img src="img/chap1/pic7.jpg" style="float: right; margin: 1% 0 1% 1%" />
-					<P>Avec Billy cox, lors de leur séparation, les deux amis s'étaient fait une promesse : "Le premier qui réussira dans la musique prendrait l'autre pour jouer avec lui!"... Et c'est finalement ce qui arrive en juin 1969.</p>
+					<img src="img/chap1/pic3.png" style="float: right; margin: 1% 0 1% 2%" />
 				</div>
 			</div>
 
@@ -304,7 +300,7 @@
 
 
 
-			<!-------------------- CHAPITRE 2 ---------------------------------------->
+			<!-- CHAPITRE 2 ---------------------------------------->
 
 			<div class="chapitre" Id="chap2">
 				<div class="TitreTavu">
@@ -313,8 +309,7 @@
 				</div>
 
 				<div class="VideoIntro">
-					<!-- <iframe class='resume' src="https://www.youtube.com/embed/_PVjcIO4MT4" frameborder="0" allowfullscreen></iframe> -->
-					<video class="resume" style=";" controls><source src="img/video/LSJv2.mp4"/></video>
+					<iframe class="resume" src="https://drive.google.com/file/d/1It64pz8K5ZKZnBrarHE_XFqY8T--RsGU/preview" width="640" height="480" frameborder="0" ></iframe>
 				</div>
 
 				<div class="corps">
@@ -349,7 +344,7 @@
 
 
 
-			<!-------------------- CHAPITRE 3 ---------------------------------------->
+			<!-- CHAPITRE 3 ---------------------------------------->
 
 			<div class="chapitre" Id="chap3">
 				<div class="TitreTavu">
@@ -358,8 +353,7 @@
 				</div>
 
 				<div class="VideoIntro">
-					<iframe class='resume' src="https://www.youtube.com/embed/IZBlqcbpmxY" frameborder="0" allowfullscreen></iframe>
-
+					<iframe class='resume' src="https://drive.google.com/file/d/1dlREatsq_VSD1u_IfiBpZO8rfrM4tFrL/preview" width="640" height="480" frameborder="0"></iframe>
 				</div>
 
 				<div class="corps">
@@ -393,10 +387,10 @@
 					<h1>La recherche de la perfection</h1>
 				</div>
 
-				<!-------------------- CHAPITRE 4 ---------------------------------------->
+				<!-- CHAPITRE 4 ---------------------------------------->
 
 				<div Id="VideoIntro">
-					<iframe class='resume' src="https://www.youtube.com/embed/fjwWjx7Cw8I" frameborder="0" allowfullscreen></iframe>
+					<iframe class='resume' src="https://drive.google.com/file/d/1xJ-mxsVzoUQRxYZ9q8Z5K8U0ik8WR-SC/preview" width="640" height="480" frameborder="0"></iframe>
 				</div>
 
 
@@ -434,7 +428,7 @@
 
 
 
-			<!-------------------- CHAPITRE 5---------------------------------------->
+			<!-- CHAPITRE 5---------------------------------------->
 
 			<div class="chapitre" Id="chap5">
 				<div class="TitreTavu">
@@ -443,7 +437,7 @@
 				</div>
 
 				<div Id="VideoIntro">
-					<iframe class='resume' src="https://www.youtube.com/embed/TKAwPA14Ni4" frameborder="0" allowfullscreen></iframe>
+					<iframe class='resume' src="https://drive.google.com/file/d/1dlREatsq_VSD1u_IfiBpZO8rfrM4tFrL/preview" width="640" height="480" frameborder="0"></iframe>
 				</div>
 
 				<div class="corps">
@@ -479,7 +473,7 @@
 
 
 
-			<!-------------------- CHAPITRE 6---------------------------------------->
+			<!-- CHAPITRE 6---------------------------------------->
 
 			<div class="chapitre" Id="chap6">
 				<div class="TitreTavu">
