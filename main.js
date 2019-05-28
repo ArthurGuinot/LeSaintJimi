@@ -13,6 +13,7 @@ function collapse() {
     chap0.style.opacity = '1.0'
     chap0.style.zIndex = '5'
     band6.style.opacity = '1'
+    document.style.overflow = 'auto';
 }
 
 //open a chapter
@@ -41,6 +42,11 @@ function expand(id, chap) {
     }
 }
 
+//only for chap6
+function expandScroll(id1, id2) {
+  document.style.overflow = 'scroll';
+  expand(id1, id2);
+}
 
 //open a discoDesc
 function descr(id) {
