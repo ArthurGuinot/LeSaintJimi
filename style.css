@@ -296,7 +296,8 @@ h1 {
 #LeSaintJimi{
 text-decoration: none;
   transition-duration: 1.2s;
-	color: #CCC;
+  transition-property: opacity;
+	color: #BBB;
 	font-size: 1000%;
 	font-weight: bold;
 	z-index: 102;
