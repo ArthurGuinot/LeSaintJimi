@@ -109,15 +109,6 @@ function diff() {
     IntroVideoLol.play();
 }
 
-//chap6
-function chap6sc(idOpen, idClose, light, unlight) {
-    idOpen.style.opacity = '1.0'
-    idClose.style.opacity = '0.0'
-    light.style.boxShadow = 'box-shadow: 0 0 10px 0 #FFF'
-    unlight.style.boxShadow = null
-}
-
-
 $.fn.moveIt = function(){
   var $window = $(window);
   var instances = [];
