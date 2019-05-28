@@ -33,9 +33,10 @@ header {
 
 footer {
 	color: #B5B5B5;
-  margin-top: 400%; /* j'ai un peu honte */
+  /* margin-top: 400%;*/
 	text-align:center;
 	position: absolute;
+  bottom: 0;
 	width:100%;
 	font-size: 2em;
 }
