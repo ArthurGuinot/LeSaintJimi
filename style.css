@@ -119,6 +119,19 @@ footer {
   color: #600;
 }
 
+.bandChap6 {
+    filter: grayscale(1) brightness(80%);
+		filter: grayscale(1) brightness(30%);
+		-moz-filter: grayscale(1);
+		-o-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+}
+
+.bandChap6:hover {
+    transition-duration: 0.5s;
+    filter: grayscale(0) brightness(100%);
+}
+
 header a {
 	width:100%;
 	height: auto;
