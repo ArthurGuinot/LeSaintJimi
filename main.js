@@ -83,30 +83,29 @@ window.onload = function(){
 
 //start the intro video
 function start() {
-    IntroVideoLol.style.display = 'none'
+    IntroVideo.style.display = 'none'
     hide.style.display = 'none'
     LeSaintJimi.style.opacity = '0.0';
-    IntroVideo.play();
+    IntroVideoLol.play();
 }
 
 //skip intro video
 function skip() {
-    IntroVideo.pause();
     IntroVideoLol.pause();
+    IntroVideo.pause();
     Intro.style.display = 'none';
     document.documentElement.style.overflow = 'auto';
     HideBeforeIntro.style.opacity = '1';
-    hide2.style.opacity = '0';
-    Holy_sound.play();
+    HolySound.play();
     document.style.overflow = 'auto';
 }
 
 //change video
 function diff() {
-    IntroVideo.style.display = 'none'
+    IntroVideoLol.style.display = 'none'
     hide.style.display = 'none'
     LeSaintJimi.style.opacity = '0.0';
-    IntroVideoLol.play();
+    IntroVideo.play();
 }
 
 $.fn.moveIt = function(){
